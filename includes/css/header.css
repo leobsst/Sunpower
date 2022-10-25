@@ -9,18 +9,33 @@ body {
 }
 
 nav.navbar {
-    display: inline;
-}
-
-ul {
+    background-color: #181925;
+    padding-top: 1em;
+    padding-bottom: 1em;
     display: inline-flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.nav-links {
+    display: inline-flex;
+    list-style: none;
+}
+
+.nav-link {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.nav-link a {
+    text-transform: capitalize;
 }
 
 
-
-#logo_icon {
-}
+/* #logo_icon {
+    height: 3em;
+} */
 
 #logo_text {
-
+    height: 3em;
 }

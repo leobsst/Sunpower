@@ -20,3 +20,7 @@ div.banner-top {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+div.navigation-dot {
+    color: blue;
+}
