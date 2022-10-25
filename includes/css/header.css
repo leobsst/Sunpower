@@ -20,15 +20,15 @@ nav.navbar {
 .nav-links {
     display: inline-flex;
     list-style: none;
-}
-
-.nav-link {
-    margin-left: 1em;
     margin-right: 1em;
 }
 
-.nav-link a {
-    text-transform: capitalize;
+.nav-link {
+    margin-left: 2em;
+    margin-right: 2em;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #E4E3E1;
 }
 
 
