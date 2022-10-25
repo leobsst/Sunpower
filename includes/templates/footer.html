@@ -8,45 +8,58 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="https://code.jquery.com/jquery.js"></script>
+        <link rel="stylesheet" href="style-footer.css">
     </head>
     <body>
 
         <footer>
             <div id="upper-footer">
                 <div id="footer_left">
-                    <div id="accueil-footer">
+                    <div class="footer-links">
                         <h2><a href="#">Accueil</a></h2>
                     </div>
         
-                    <div id="ombrieres-footer">
+                    <div class="footer-links">
                         <h2><a href="#">Ombrières</a></h2>
                     </div>
                 </div>
 
                 <div id="footer-middle">
-                    <div id="qui-sommes">
+                    <div class="footer-links">
                         <h2><a href="#">Qui sommes-nous ?</a></h2>
                     </div>
         
-                    <div id="partenaire-footer">
+                    <div class="footer-links">
                         <h2><a href="#">Nos partenaires</a></h2>
                     </div>
                 </div>
 
                 <div id="footer-right">
-                    <div id="mentions-legales-footer">
+                    <div class="footer-links"> 
                         <h2><a href="#">Mentions légales</a></h2>
                     </div>
                     
-                    <div id="contact-footer">
+                    <div class="footer-links">
                         <h2><a href="#">Nous contacter</a></h2>
                     </div>        
                 </div>
 
                 <div id="logo-and-form">
+
+                    <img src="assets/icons/logo.svg" alt="logo">
+
+                    <form action="#" method="post">
+                        <p>
+                            <input type="email" name="email" value="Votre adresse mail" id="form-mail"/>
+                            <input type="submit" value="S'abonner">
+                        </p>
+                    </form>
                 </div>
             </div>
 
+            <div id="bottom-footer">
+                <p>© Sunpower | Tous droits réservés</p>
+            </div>
             
         </footer>
         </body>

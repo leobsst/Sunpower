@@ -1,0 +1,47 @@
+:root {
+    --accent-yellow : #FAC86F;
+    --medium-grey : #2C2E44;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap');
+
+footer {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.6rem;
+    margin-top: 50px;
+}
+
+#upper-footer {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: var(--accent-yellow);
+}
+
+#bottom-footer {
+    background-color: var(--medium-grey);
+    color: white;
+    height: 20px;
+    align-items: center;
+}
+
+form input{
+    background-color: var(--accent-yellow);
+    border-radius: 3px;
+    border: none;
+}
+
+#logo-and-form {
+    text-align: center;
+}
+
+#form-mail{
+    height: 20px;
+}
