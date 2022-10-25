@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../css/header.css">
+        <script src="../js/scroll.js" defer></script>
         <script src="https://kit.fontawesome.com/bfcfa6ccbd.js" crossorigin="anonymous"></script>
         <link href="../css/fa/all.css" rel="stylesheet">
         <script defer src="../js/fa/all.js"></script>
@@ -12,20 +13,21 @@
         <script src="https://code.jquery.com/jquery.js"></script>
     </head>
     <body>
-      <nav class="navbar">
+      <nav id="navbar" class="navbar">
         <div class="nav_head">
             <a href="#"><img src="../assets/icons/logo-icon.svg" alt="logo sunpower" id="logo_icon"><img src="../assets/icons/logo.svg" alt="logo sunpower" id="logo_text"></a>
         </div>
+        <button class="burger" aria-expanded="false" aria-controls="primary-navigation">
+          <span class="sr-only">Menu</span>
+        </button>
         <div class="nav_content">
-          <ul class="nav-links">
-            <li><a class="nav-link" href="#">Accueil</a></li>
-            <li><a class="nav-link" href="#">Ombrières</a></li>
-            <li><a class="nav-link" href="#">Groupe</a></li>
-            <li><a class="nav-link" href="#">Contact</a></li>
+          <ul id="primary-navigation" class="nav-links" data-visble="false">
+            <li><a aria-hidden="true" class="nav-link" href="#">Accueil</a></li>
+            <li><a aria-hidden="true" class="nav-link" href="#">Ombrières</a></li>
+            <li><a aria-hidden="true" class="nav-link" href="#">Groupe</a></li>
+            <li><a aria-hidden="true" class="nav-link" href="#">Contact</a></li>
           </ul>
         </div>
-        
-
       </nav>
         
 

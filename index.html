@@ -10,6 +10,7 @@
         <meta name="description" content="Sunpower, retrouve ton énergie !">
         <link rel="stylesheet" href="includes/css/main.css">
         <script src="includes/js/main.js" defer></script>
+        <script src="includes/js/scroll.js" defer></script>
         <script src="https://kit.fontawesome.com/bfcfa6ccbd.js" crossorigin="anonymous"></script>
         <link href="includes/css/fa/all.css" rel="stylesheet">
         <script defer src="includes/js/fa/all.js"></script>
@@ -28,12 +29,16 @@
         <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     </head>
     <body>
-        <iframe src="includes/templates/header.html" frameborder="0" width="100%" height="155"></iframe>
-        <div class="banner-top"></div>
+        <iframe class="header" src="includes/templates/header.html" frameborder="0" width="100%" height="155"></iframe>
         <div class="body-content">
+            <div class="banner-top">
+                <img src="includes/assets/background-top.jpg">
+            </div>
             <div class="slider">
-                <div class="navgion-dot">
+                <div class="navigation-dot">
                     <i class="fa-solid fa-circle"></i>
+                    <i class="fa-regular fa-circle"></i>
+                    <i class="fa-regular fa-circle"></i>
                 </div>
             </div>
             <div id="map"></div>

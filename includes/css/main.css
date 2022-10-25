@@ -1,26 +1,52 @@
+:root {
+    --main-yellow-color: #FAC86F;
+    --main-dark-color: #242530;
+}
+
 html,
 body {
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100vh;
+    background-color: var(--main-dark-color);
 }
 
-#map {
-    height: 400px;
-    width: 100%;
+iframe.header {
+    position: fixed;
+    z-index: 99;
+    top: 0;
 }
 
+div.body-content {
+    margin-top: 10%;
+    z-index: 1;
+    background-color: var(--main-dark-color);
+}
 
 div.banner-top {
-    height: 20em;
     width: 100%;
-    background-image: url(../assets/backgroun-top.jpg);
-    background-position: top -550px right 0;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
-div.navigation-dot {
-    color: blue;
+    div.banner-top img {
+        width: 100%;
+        position: fixed;
+        height: 350px;
+        object-fit: cover;
+        top: 80px;
+    }
+
+div.navigation-dot svg {
+    color: var(--main-yellow-color);
+    cursor: pointer;
+    margin: 0 1em 0 1em;
+    z-index: 1;
+}
+
+
+
+#map {
+    margin-top: 200em;
+    height: 400px;
+    width: 100%;
 }

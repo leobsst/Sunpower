@@ -10,22 +10,51 @@ body {
 
 nav.navbar {
     background-color: #181925;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    display: inline-flex;
+    padding-block: 1em;
+    display: block;
     width: 100%;
+    /* height: 85px; /* apres animation js -> 55px  */
     justify-content: space-between;
+    filter: drop-shadow(0px 5px 8px #000);
+}
+
+div.navbar-nav.scrolled {
+    height: 55px!important;
 }
 
 .nav-links {
-    display: inline-flex;
+    display: flex;
+    flex-direction: column;
     list-style: none;
-    margin-right: 1em;
+}
+
+.burger {
+    display: block;
+    position: absolute;
+    background: red;
+    width: 1rem;
+    aspect-ratio: 1;
+    top: 2rem;
+    right: 2rem;
+}
+
+@media (min-width: 780px) {
+    .nav-links {
+        flex-direction: row;
+        margin-right: 1em;
+    }
+
+    .burger {
+        display: none;
+    }
+
+    nav.navbar {
+        display: inline-flex;
+    }
 }
 
 .nav-link {
-    margin-left: 2em;
-    margin-right: 2em;
+    margin-inline: 2em;
     text-decoration: none;
     text-transform: uppercase;
     color: #E4E3E1;
@@ -37,5 +66,6 @@ nav.navbar {
 } */
 
 #logo_text {
-    height: 3em;
+    height:3em;
+    height: clamp(2em,3em,5em)
 }
