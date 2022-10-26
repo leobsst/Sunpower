@@ -1,18 +1,13 @@
-div.navigation-dot svg {
-    color: var(--main-yellow-color);
-    cursor: pointer;
-    margin: 0 1em 0 1em;
-    z-index: 1;
-}
 
-
-
+/* STYLE DE LA MAP */
 #map {
     margin-top: 3em;
     height: 400px;
     width: 100%;
     margin-bottom: -15px;
 }
+
+/* PARAMETER POUR LE STYLE DU SLIDE */
 
 .splide__pagination {
     counter-reset: pagination-num;
@@ -27,7 +22,24 @@ div.navigation-dot svg {
     display: flex;
 }
 
+div.navigation-dot svg {
+    color: var(--main-yellow-color);
+    cursor: pointer;
+    margin: 0 1em 0 1em;
+    z-index: 1;
+}
+
+/* //////////////////////////////// */
+
+/* STYLE SLIDE 1 + LAYOUT */
+
 .slide1 {
+    display: flex;
+    flex-direction: column;
+    margin-inline: 3em;
+}
+
+.slide2 {
     display: flex;
     flex-direction: column;
     margin-inline: 3em;
@@ -43,32 +55,60 @@ div.navigation-dot svg {
 
 .slide_title {
     text-align: center;
+    color: var(--main-font-color);
+    font-weight: bold;
+    font-size: 1.5em;
 }
 
 .slide_info {
     margin: 0;
     background-color: var(--main-green-color);
-    padding: 4em;
+    color: var(--main-font-color);
+    letter-spacing: 1px;
+    font-weight: bold;
+    padding: 1.5em;
+    font-size: 1.2em;
     line-height: 1.8em;
     text-align: center;
+    margin-block: 3em;
 }
 .slide1_text {
     flex-direction: column;
+    color: var(--main-font-color);
 }
 
 .slide1_text p {
-    margin: 0;
+    font-size: 1.2em;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
+/* STYPE SLIDE 2 + LAYOUT */
+
+
+
+/* GESTION DES TAILLES DES IMAGES EN MOBILE FIRST */
+/* IMAGE SLIDE 1 */
 .crop_img #img_slide1 {
     width: 100%;
     height: 20em;
 }
 
+/* IMAGE SLIDE 2 */
+.crop_img #img_slide2 {
+    width: 100%;
+    height: 20em;  
+}
+
+/* IMAGE SLIDE 3 */
+
+
+/* IMAGE CROPPER */
 .crop_img {
     height: 12em;
     overflow: hidden;
 }
+/* ////////////////////////////////////////////// */
 
 
 @media (max-width: 1200px) {
