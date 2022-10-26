@@ -1,6 +1,7 @@
 footer {
     font-size: 0.6rem;
     bottom: 0;
+    background-color: var(--main-darker-color);
 }
 
 #upper-footer {

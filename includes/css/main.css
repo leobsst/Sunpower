@@ -8,9 +8,10 @@ div.navigation-dot svg {
 
 
 #map {
-    margin-top: 200em;
+    margin-top: 3em;
     height: 400px;
     width: 100%;
+    margin-bottom: -15px;
 }
 
 .splide__pagination {
@@ -23,31 +24,58 @@ div.navigation-dot svg {
 }
 
 .splide__slide div {
-    width: 100vw;
     display: flex;
 }
 
-#img_slide1 {
-    width: 30em;
+.slide1 {
+    display: flex;
+    flex-direction: column;
+    margin-inline: 3em;
+}
+
+.slide_row_1 {
+    flex-direction: column-reverse;
+}
+
+.slide_row_2 {
+    flex-direction: column-reverse;
+}
+
+.slide_title {
+    text-align: center;
+}
+
+.slide_info {
+    margin: 0;
+    background-color: var(--main-green-color);
+    padding: 4em;
+    line-height: 1.8em;
+    text-align: center;
 }
 .slide1_text {
-    display: flex;
     flex-direction: column;
 }
 
-.slide_col_1 {
-    display: flex;
-    flex-direction: column;
+.slide1_text p {
+    margin: 0;
 }
 
-.slide_col_2 {
-    display: flex;
-    flex-direction: column;
+.crop_img #img_slide1 {
+    width: 100%;
+    height: 20em;
 }
 
-/* .slide2 {
-
+.crop_img {
+    height: 12em;
+    overflow: hidden;
 }
 
-.slide3 {
-} */
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 978px) {
+}   
+
+/* .slide3 {
+}  */

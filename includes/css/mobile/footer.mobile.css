@@ -6,6 +6,7 @@
     }
     #logo-and-form {
         order: 1;
+        padding-top: 15px;
     }
     #footer-left {
         order: 2;

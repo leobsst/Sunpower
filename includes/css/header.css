@@ -17,25 +17,8 @@ body {
     list-style: none;
     background-color: var(--main-dark-color);
     font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
 }
-
-div.body-content {
-    margin-top: 85px;
-    z-index: 1;
-    background-color: var(--main-dark-color);
-}
-
-div.banner-top {
-    width: 100%;
-    z-index: -1;
-}
-
-    div.banner-top img {
-        width: 100%;
-        height: 350px;
-        object-fit: cover;
-        margin-top: auto;
-    }
 
 nav.navbar {
     background-color: var(--main-darker-color);
@@ -123,3 +106,21 @@ a.nav-link.current {
 .open {
     transform: translate(0);
 }
+
+div.body-content {
+    margin-top: 85px;
+    z-index: 1;
+    background-color: var(--main-dark-color);
+}
+
+div.banner-top {
+    width: 100%;
+    z-index: -1;
+}
+
+    div.banner-top img {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+        margin-top: auto;
+    }
