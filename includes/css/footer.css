@@ -1,7 +1,6 @@
 footer {
     font-size: 0.6rem;
     bottom: 0;
-    border: red 1px solid;
 }
 
 #upper-footer {
@@ -26,21 +25,35 @@ footer {
     font-weight: bold;
 }
 
-
-
-form input{
-    background-color: var(--main-yellow-color);
-    border-radius: 3px;
-    border: none;
-    height: 20px;
-    padding: 5px;
+#logo-and-form {
+    text-align: center;
+    margin-top: -40px;
 }
 
-p.sub-news-txt {
+    form input{
+        background-color: var(--main-yellow-color);
+        border-radius: 3px;
+        border: none;
+    }
+
+        form input#mail {
+            height: 22px;
+            padding: 5px;
+        }
+
+            form input#mail::placeholder {
+                color: var(--main-darker-color);
+            }
+
+        form input#subscribe {
+            height: 32px;
+            padding: 5px;
+            cursor: pointer;
+        }
+
+h3.sub-news-txt {
+    margin-top: -15px;
     color: var(--main-font-color);
 }
 
 
-#logo-and-form {
-    text-align: center;
-}

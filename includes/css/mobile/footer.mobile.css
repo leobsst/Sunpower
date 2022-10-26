@@ -1,0 +1,19 @@
+@media (max-width: 962px) {
+    #upper-footer {
+        flex-direction: column!important;
+        height: 450px!important;
+        text-align: center;
+    }
+    #logo-and-form {
+        order: 1;
+    }
+    #footer-left {
+        order: 2;
+    }
+    #footer-middle {
+        order: 3;
+    }
+    #footer-right {
+        order: 4;
+    }
+}

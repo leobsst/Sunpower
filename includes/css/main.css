@@ -15,9 +15,34 @@ div.navigation-dot svg {
 
 .splide__pagination {
     counter-reset: pagination-num;
-  }
+}
   
-  .splide__pagination__page:before {
+.splide__pagination__page:before {
     counter-increment: pagination-num;
     content: counter( pagination-num );
-  }
+}
+
+.splide__slide div {
+    width: 100vw;
+    display: flex;
+}
+
+#img_slide1 {
+    width: 30em;
+}
+.slide1_text {
+    display: flex;
+    flex-direction: column;
+}
+
+.img_text {
+    display: flex;
+    flex-direction: column;
+}
+
+.slide2 {
+
+}
+
+.slide3 {
+}
