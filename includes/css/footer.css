@@ -1,0 +1,46 @@
+footer {
+    font-size: 0.6rem;
+    bottom: 0;
+    border: red 1px solid;
+}
+
+#upper-footer {
+    display: flex;
+    justify-content: space-around;
+    margin: 15px 15px 15px 15px;
+    height: 200px;
+    align-items: center;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: var(--main-yellow-color);
+}
+
+.bottom-footer {
+    background-color: var(--medium-gray);
+    color: white;
+    height: 30px;
+    padding-left: 5%;
+    padding-top: 1px;
+    font-weight: bold;
+}
+
+
+
+form input{
+    background-color: var(--main-yellow-color);
+    border-radius: 3px;
+    border: none;
+    height: 20px;
+    padding: 5px;
+}
+
+p.sub-news-txt {
+    color: var(--main-font-color);
+}
+
+
+#logo-and-form {
+    text-align: center;
+}

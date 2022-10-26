@@ -2,15 +2,13 @@
 <html lang="fr">
     <head>
         <title>Sunpower</title>
-        <script src="includes/js/map.js"></script>
         <meta charset="UTF-8">
-    
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Sunpower, retrouve ton énergie !">
         <link rel="stylesheet" href="includes/css/main.css">
-        <script src="includes/js/main.js" defer></script>
-        <script src="includes/js/scroll.js" defer></script>
+        <link rel="stylesheet" href="includes/css/header.css">
+        <link rel="stylesheet" href="includes/css/footer.css">
         <script src="https://kit.fontawesome.com/bfcfa6ccbd.js" crossorigin="anonymous"></script>
         <link href="includes/css/fa/all.css" rel="stylesheet">
         <script defer src="includes/js/fa/all.js"></script>
@@ -27,9 +25,35 @@
         <meta name="theme-color" content="#ffffff">
         <script src="https://unpkg.com/scrollreveal"></script>
         <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    </head>
+        <link rel="stylesheet" href="includes/css/header.css">
+        <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/js/splide.min.js" defer></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/css/splide-core.min.css" integrity="sha256-ZAXImCY06SjVuIrJfWUETkyCctX5aGdL1AVEBX5CxZA=" crossorigin="anonymous">
+        <script src="includes/js/main.js" defer></script>
+        <script src="includes/js/map.js"></script>
+        <script src="includes/js/scroll.js" defer></script>
+        <script src="includes/js/nav.js" defer></script>
+        <script src="includes/js/slider.js" defer></script>
     <body>
-        <iframe class="header" src="includes/templates/header.html" frameborder="0" width="100%" height="155"></iframe>
+        <nav id="navbar" class="navbar">
+            <div class="nav-head">
+              <div>
+                <a href="#"><img src="includes/assets/icons/mstile-70x70.png" alt="logo sunpower" id="logo_icon"></a>
+                <a href="#"><img src="includes/assets/icons/logo.svg" alt="logo sunpower" id="logo_text"></a>
+              </div>
+              <button class="burger" type="button" aria-label="activer la navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+            </div>
+            <ul class="nav-links">
+              <li><a class="nav-link current" href="#">Accueil</a></li>
+              <li><a class="nav-link" href="#">Ombrières</a></li>
+              <li><a class="nav-link" href="#">Groupe</a></li>
+              <li><a class="nav-link" href="#">Contact</a></li>
+            </ul>
+        </nav>
+
         <div class="body-content">
             <div class="banner-top">
                 <img src="includes/assets/background-top.jpg">
@@ -41,10 +65,68 @@
                     <i class="fa-regular fa-circle"></i>
                 </div>
             </div>
+            <section class="splide" aria-label="Splide Basic HTML Example">
+                <h2 id="carousel-heading">Splide Basic HTML Example</h2>
+                <div class="splide__track">
+                      <ul class="splide__list">
+                          <li class="splide__slide"><img src="includes/assets/banner2.jpg" alt=""></li>
+                          <li class="splide__slide">Slide 02</li>
+                          <li class="splide__slide">Slide 03</li>
+                      </ul>
+                </div>
+              </section>
             <div id="map"></div>
         </div>
 
+
+        <footer>
+            <div id="upper-footer">
+                <div id="footer_left">
+                    <div class="footer-links">
+                        <a href="#"><h2>Accueil</h2></a>
+                    </div>
+        
+                    <div class="footer-links">
+                        <a href="#"><h2>Ombrières</h2></a>
+                    </div>
+                </div>
+
+                <div id="footer-middle">
+                    <div class="footer-links">
+                        <a href="#"><h2>Qui sommes-nous ?</h2></a>
+                    </div>
+        
+                    <div class="footer-links">
+                        <a href="#"><h2>Nos partenaires</h2></a>
+                    </div>
+                </div>
+
+                <div id="footer-right">
+                    <div class="footer-links"> 
+                        <a href="#"><h2>Mentions légales</h2></a>
+                    </div>
+                    
+                    <div class="footer-links">
+                        <a href="#"><h2>Nous contacter</h2></a>
+                    </div>        
+                </div>
+
+                <div id="logo-and-form">
+                    <form action="#" method="post">
+                            <img src="includes/assets/icons/mstile-70x70.png" alt="logo">
+                            <h3 class="sub-news-txt">Inscriez-vous à la newsletter</h3>
+                            <input type="email" name="email" value="Votre adresse mail" id="form-mail"/>
+                            <input type="submit" id="subscribre" value="S'abonner">
+                    </form>
+                </div>
+            </div>
+
+            <div class="bottom-footer">
+                <p>© Sunpower | Tous droits réservés</p>
+            </div>
+            
+        </footer> 
+
         <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4Gw-yZQM1X7S6bq0CK3M51MTQGzV9KrI&callback=initMap" defer></script>
-        <iframe src="includes/templates/footer.html" frameborder="0" width="100%" height="300"></iframe>
     </body>
 </html>

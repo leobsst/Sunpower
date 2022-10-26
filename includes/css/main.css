@@ -1,41 +1,3 @@
-:root {
-    --main-yellow-color: #FAC86F;
-    --main-dark-color: #242530;
-}
-
-html,
-body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: var(--main-dark-color);
-}
-
-iframe.header {
-    position: fixed;
-    z-index: 99;
-    top: 0;
-}
-
-div.body-content {
-    margin-top: 10%;
-    z-index: 1;
-    background-color: var(--main-dark-color);
-}
-
-div.banner-top {
-    width: 100%;
-}
-
-    div.banner-top img {
-        width: 100%;
-        position: fixed;
-        height: 350px;
-        object-fit: cover;
-        top: 80px;
-    }
-
 div.navigation-dot svg {
     color: var(--main-yellow-color);
     cursor: pointer;
@@ -50,3 +12,12 @@ div.navigation-dot svg {
     height: 400px;
     width: 100%;
 }
+
+.splide__pagination {
+    counter-reset: pagination-num;
+  }
+  
+  .splide__pagination__page:before {
+    counter-increment: pagination-num;
+    content: counter( pagination-num );
+  }
