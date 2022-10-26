@@ -1,4 +1,6 @@
 document.addEventListener( 'DOMContentLoaded', function() {
-    var splide = new Splide( '.splide' );
+    const splide = new Splide( '.splide', {
+      arrows : false,
+    } );
     splide.mount();
   } );

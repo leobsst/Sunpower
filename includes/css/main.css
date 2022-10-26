@@ -9,24 +9,18 @@
 
 /* PARAMETER POUR LE STYLE DU SLIDE */
 
-.splide__pagination {
-    counter-reset: pagination-num;
-}
   
-.splide__pagination__page:before {
-    counter-increment: pagination-num;
-    content: counter( pagination-num );
+.splide__pagination__page {
+    background-color: var(--main-yellow-color);
+    border-radius: 50%;
+    height: 2em;
+    width: 2em;
+    margin-inline: 1em;
+    border: none;
 }
 
 .splide__slide div {
     display: flex;
-}
-
-div.navigation-dot svg {
-    color: var(--main-yellow-color);
-    cursor: pointer;
-    margin: 0 1em 0 1em;
-    z-index: 1;
 }
 
 /* //////////////////////////////// */
@@ -40,6 +34,12 @@ div.navigation-dot svg {
 }
 
 .slide2 {
+    display: flex;
+    flex-direction: column;
+    margin-inline: 3em;
+}
+
+.slide3 {
     display: flex;
     flex-direction: column;
     margin-inline: 3em;
@@ -101,7 +101,10 @@ div.navigation-dot svg {
 }
 
 /* IMAGE SLIDE 3 */
-
+.crop_img #img_slide3 {
+    width: 100%;
+    height: 20em;  
+}
 
 /* IMAGE CROPPER */
 .crop_img {
