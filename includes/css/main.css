@@ -79,17 +79,15 @@ p, a {
     align-items: center;
 }
 
-.pagination button {
-    width: fit-content;
-    background-color: transparent;
-    border: none;
+
+.pagination img {
+    width: 2em;
+    margin-inline: 1em;
+    margin-block: 2em;
+    margin-top: 3em;
+    filter: invert(93%) sepia(54%) saturate(5114%) hue-rotate(309deg) brightness(105%) contrast(96%);
 }
 
-.pagination button svg {
-    margin-inline: 1em;
-    margin-top: 2em;
-    color: var(--main-yellow-color);
-}
 
 @media (max-width: 832px) {
 

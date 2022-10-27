@@ -21,6 +21,10 @@ body {
     scroll-behavior: smooth;
 }
 
+*:focus {
+    outline: none;
+}
+
 a {
     transition: .2s;
 }

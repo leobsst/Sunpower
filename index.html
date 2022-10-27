@@ -33,11 +33,11 @@
         <script src="/includes/js/nav.js" defer></script>
         <script src="/includes/js/slider.js" defer></script>
     <body>
-        <nav id="navbar" class="navbar">
+        <nav id="navbar" class="navbar" aria-label="navbar"> <!--  Navbar -->
             <div class="nav-head">
               <div>
-                <a href="#"><img src="/includes/assets/icons/mstile-70x70.png" alt="logo sunpower" id="logo_icon"></a>
-                <a href="#"><img src="/includes/assets/icons/logo.svg" alt="logo sunpower" id="logo_text"></a>
+                <a href="/"><img src="/includes/assets/icons/mstile-70x70.png" alt="logo sunpower" id="logo_icon"></a>
+                <a href="/"><img src="/includes/assets/icons/logo.svg" alt="logo sunpower" id="logo_text"></a>
               </div>
               <button class="burger" type="button" aria-label="activer la navigation" aria-expanded="false">
                 <span></span>
@@ -54,15 +54,15 @@
         </nav>
 
         <div class="body-content">
-            <div class="banner-top">
-                <img src="/includes/assets/background-top.jpg">
+            <div class="banner-top"> <!-- Bannière de haut de page -->
+                <img src="/includes/assets/background-top.jpg" alt="Bannière de haut de page">
             </div>
-            <div class="pagination">
-                <button><i class="fa-solid fa-circle"></i></button>
-                <button><i class="fa-regular fa-circle"></i></button>
-                <button><i class="fa-regular fa-circle"></i></button>
+            <div class="pagination"> <!-- Pagination du slider -->
+                <img id="icon" class="current_page" src="/includes/assets/icons/circle-regular.svg" alt="">
+                <img id="icon" src="/includes/assets/icons/circle-regular.svg" alt="">
+                <img id="icon" src="/includes/assets/icons/circle-regular.svg" alt="">
             </div>
-            <div class="main_wrapper">
+            <div class="main_wrapper" aria-label="Texte du slider"> <!-- Slider -->
                 <section class="desc_text">
                     <h2 class="desc_title">A la pointe  de la technologie verte <br>
                         <span>Panneaux et ombrières solaires</span>
@@ -80,28 +80,28 @@
                             Avec des panneaux à haut rendement, il est désormais possible de charger vos voitures électrique grâce à l’énergie solaire.</p>
                     </div>
                 </section>
-            <section class="splide" aria-label="Ombrières">
+            <section class="splide" aria-label="Image d'ombrière">
                 <ul class="splide__pagination">
                 </ul>
                 <div class="splide__track">
                       <ul class="splide__list">
-                          <li class="splide__slide">
+                          <li id="custom1" class="splide__slide">
                                     <img src="/includes/assets/imgs/ombriere-parking.jpg" alt="">
                             </li>
-                            <li class="splide__slide">
+                            <li id="custom1" class="splide__slide">
                                     <img src="/includes/assets/imgs/panneaux-solaires-toit-maison-tuiles.jpeg" alt=""> 
                             </li>
-                          <li class="splide__slide">
+                          <li id="custom1" class="splide__slide">
                                     <img src="/includes/assets/imgs/rechercheDāveloppement.jpg" alt=""> 
                           </li>
                       </ul>
                 </div>
               </section>
             </div>
-            <div id="map"></div>
+            <div id="map" aria-label="Carte interractive avec la position des implantations"></div> <!-- Affichage de la carte interactive avec les différents endroits d'implantation marqués avec des marqueurs-->
         </div>
 
-        <footer>
+        <footer> <!-- Footer -->
             <div id="upper-footer">
                 <div id="footer-left">
                     <div class="footer-links">
@@ -128,7 +128,7 @@
                     </div>        
                 </div>
                 <div id="logo-and-form">
-                    <form action="#" method="post">
+                    <form action="https://bit.ly/3TG3Iyl" method="POST">
                             <img src="/includes/assets/icons/mstile-70x70.png" alt="logo">
                             <h3 class="sub-news-txt">Inscriez-vous à la newsletter</h3>
                             <input type="email" name="email" placeholder="Votre adresse mail" id="mail"/>
@@ -142,7 +142,7 @@
                 <p>Sunpower, retrouve ton énergie !</p>
             </div>
         </footer> 
-        <div class="top_btn" id="top_btn" onmouseover="ch_op_b(this)" onmouseout="ch_op_a(this)" onClick="GoTop()"><i class="fa-solid fa-arrow-up fa-2x"></i></div>
+        <div class="top_btn" id="top_btn" onmouseover="ch_op_b(this)" onmouseout="ch_op_a(this)" onClick="GoTop()" aria-label="Bouton vers le haut"><i class="fa-solid fa-arrow-up fa-2x"></i></div> <!-- Bouton pour aller en haut de page -->
         <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4Gw-yZQM1X7S6bq0CK3M51MTQGzV9KrI&callback=initMap" defer></script>
     </body>
 </html>

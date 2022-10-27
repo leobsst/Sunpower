@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-        <title>Sunpower - Ombrières</title>
+        <title>Sunpower - Contact</title>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -33,7 +33,7 @@
         <script src="/includes/js/nav.js" defer></script>
         <script src="/includes/js/scroll.js" defer></script>
     <body>
-        <nav id="navbar" class="navbar">
+        <nav id="navbar" class="navbar"> <!-- Navbar -->
             <div class="nav-head">
               <div>
                 <a href="/"><img src="/includes/assets/icons/mstile-70x70.png" alt="logo sunpower" id="logo_icon"></a>
@@ -54,16 +54,16 @@
         </nav>
 
         <div class="body-content">
-            <div class="banner-top">
+            <div class="banner-top"> <!-- Bannière de haut de page -->
                 <img src="/includes/assets/imgs/ombriere1.jpg">
             </div>
 
-            <div class="title-content">
+            <div class="title-content"> <!-- Titre ou section de la page -->
                 <h2>Nous contacter</h2>
                 <hr>
             </div>
 
-            <div class="select-type">
+            <div class="select-type"> <!-- Selection du type de demandeur -->
                 <div class="cards">
                     <div class="card pro">
                         <div class="icon-type">
@@ -94,10 +94,32 @@
                 </div>
             </div>
 
+            <div class="mailing-form">
+                
+                <div class="infos">
+                    <h2>service particulier</h2>
+                    <hr>
+                    <span><i class="fa-solid fa-phone"></i><p>08.32.21.43.12</p></span>
+                    <span><i class="fa-solid fa-location-dot"></i><p>30 Rue du soleil<br>34000 Montpellier<br>FRANCE</p></span>
+                    <span><i class="fa-solid fa-envelope"></i><p>sales@sunpower.com</p></span>
+                </div>
+
+                <form action="/" method="post">
+
+                    <input type="text" name="lname" id="lname" required placeholder="Nom">
+                    <input type="text" name="fname" id="fname" required placeholder="Prénom"><br>
+                    <input type="email" name="email" id="email" required placeholder="Email">
+                    <input type="tel" name="tel" id="tel" required placeholder="Téléphone"><br>
+                    <textarea name="description" id="description" cols="30" rows="10" required placeholder="Description"></textarea><br>
+                    <input type="submit" value="S'abonner ➝">
+
+                </form>
+            </div>
+
         </div>
 
 
-        <footer>
+        <footer> <!-- Footer -->
             <div id="upper-footer">
                 <div id="footer-left">
                     <div class="footer-links">
@@ -124,7 +146,7 @@
                     </div>        
                 </div>
                 <div id="logo-and-form">
-                    <form action="#" method="post">
+                    <form action="https://bit.ly/3TG3Iyl" method="POST">
                             <img src="/includes/assets/icons/mstile-70x70.png" alt="logo">
                             <h3 class="sub-news-txt">Inscriez-vous à la newsletter</h3>
                             <input type="email" name="email" placeholder="Votre adresse mail" id="mail"/>
@@ -139,6 +161,6 @@
             </div>
         </footer> 
         <script src="/includes/js/scrollreveal.js"></script>
-        <div class="top_btn" id="top_btn" onmouseover="ch_op_b(this)" onmouseout="ch_op_a(this)" onClick="GoTop()"><i class="fa-solid fa-arrow-up fa-2x"></i></div>
+        <div class="top_btn" id="top_btn" onmouseover="ch_op_b(this)" onmouseout="ch_op_a(this)" onClick="GoTop()"><i class="fa-solid fa-arrow-up fa-2x"></i></div> <!-- Bouton vers haut de page -->
     </body>
 </html>

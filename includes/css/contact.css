@@ -66,3 +66,90 @@ div.select-type {
         margin: 0 10px 0 10px;
         cursor: pointer;
     }
+
+div.mailing-form {
+    text-align: center;
+    width: 50%;
+    margin: 100px auto 0 auto;
+    color: var(--main-dark-color);
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: var(--main-yellow-color);
+    border-radius: 10px;
+    padding: 20px;
+    min-height: 300px;
+}
+
+    div.mailing-form div.infos {
+        border-radius: 10px;
+        background-color: var(--main-green-color);
+        padding: 20px;
+    }
+
+    div.mailing-form div.infos h2 {
+        color: var(--main-yellow-color);
+    }
+
+    div.mailing-form div.infos hr {
+        width: 50%;
+        margin-top: -10px;
+        margin-bottom: 15px;
+        border: none;
+        background-color: var(--main-yellow-color);
+        height: 2px;
+        border-radius: 100%;
+    }
+
+    div.mailing-form div.infos span {
+        text-align: left;
+        display: flex;
+        align-items: center;
+    }
+
+    div.mailing-form div.infos span p {
+        color: var(--main-font-color);
+        margin: 10px 10px 10px 10px;
+    }
+
+    div.mailing-form div.infos span svg {
+        width: 15px;
+        height: 15px;
+        padding: 5px;
+        border-radius: 100%;
+        background-color: var(--main-yellow-color);
+        color: var(--main-green-color);
+    }
+
+    div.mailing-form form input {
+        height: 30px;
+        padding: 5px;
+        width: 100px;
+    }
+
+
+    div.mailing-form form input::placeholder,
+    div.mailing-form form input::-ms-value,
+    div.mailing-form form textarea::placeholder {
+        font-family: 'Inter', sans-serif;
+        font-weight: bold;
+    }
+
+    div.mailing-form form input[type="text"],
+    div.mailing-form form input[type="number"],
+    div.mailing-form form input[type="email"],
+    div.mailing-form form input[type="tel"],
+    div.mailing-form form textarea {
+        background-color: var(--main-font-color);
+        border: 3px solid var(--main-green-color);
+    }
+
+    div.mailing-form form input[type="submit"],
+    div.mailing-form form input[type="file"] {
+        background-color: var(--main-green-color);
+        color: var(--main-font-color);
+    }
+
+    div.mailing-form form textarea {
+        resize: none;
+    }
