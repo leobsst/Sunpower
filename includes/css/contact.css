@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Poppins:wght@600&display=swap');
+
+h1,h2,h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+p, a {
+    font-family: 'Inter', sans-serif;
+}
+
+div.title-content {
+    height: fit-content;
+    padding: 45px 10px 45px 10px;
+    margin-left: -10px;
+    margin-right: -10px;;
+    width: 100%;
+    margin-top: -100px;
+    background: #181925;
+    box-shadow: 0px -10px 12px rgba(0, 0, 0, 0.25), 0px 10px 12px rgba(0, 0, 0, 0.15);
+    transform: rotate(-3.51deg);
+    text-align: center;
+    color: var(--main-yellow-color);
+}
+
+    div.title-content h2,
+    div.title-content h3,
+    div.title-content hr {
+        transform: rotate(3.51deg)!important;
+    }
+
+
+    div.title-content hr {
+        width: 5%;
+        background-color: var(--main-yellow-color);
+        border: none;
+        height: 1px;
+    }
+
+
+
+div.select-type {
+    text-align: center;
+    width: 80%;
+    margin: 100px auto 0 auto;
+    color: var(--main-dark-color);
+    display: flex;
+    justify-content: center;
+}
+
+    div.select-type div.cards {
+        display: flex;
+        justify-content: center;
+        margin: 10px 10px 10px 10px;
+    }
+
+    div.select-type div.cards div.card {
+        background-color: var(--main-yellow-color);
+        padding: 10px;
+        border-radius: 10px;
+        width: 100px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0 10px 0 10px;
+        cursor: pointer;
+    }

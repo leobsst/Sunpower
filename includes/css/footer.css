@@ -21,9 +21,9 @@ footer {
     background-color: var(--medium-gray);
     color: white;
     height: 30px;
-    padding-left: 5%;
-    padding-top: 1px;
     font-weight: bold;
+    display: flex;
+    justify-content: space-around;
 }
 
 #logo-and-form {

@@ -1,10 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Poppins:wght@600&display=swap');
+
+h1,h2,h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+p, a {
+    font-family: 'Inter', sans-serif;
+}
+
 div.title-content {
-    position: absolute;
     height: fit-content;
-    width: 120%;
     padding: 20px 10px 20px 10px;
-    left: -100px;
-    top: 350px;
+    margin-left: -10px;
+    margin-right: -10px;;
+    width: 100%;
+    margin-top: -100px;
     background: #181925;
     box-shadow: 0px -10px 12px rgba(0, 0, 0, 0.25), 0px 10px 12px rgba(0, 0, 0, 0.15);
     transform: rotate(-3.51deg);
@@ -20,7 +30,7 @@ div.title-content {
 
 
     div.title-content hr {
-        width: 15%;
+        width: 5%;
         background-color: var(--main-yellow-color);
         border: none;
         height: 1px;
@@ -29,7 +39,7 @@ div.title-content {
 
 
 div.grid-content-1 {
-    margin-top: 130px;
+    margin-top: 100px;
     text-align: center;
     width: 100%;
     display: flex;
@@ -40,7 +50,8 @@ div.grid-content-1 {
 
     div.grid-content-1 div {
         width: 370px;
-        height: 370px;
+        min-height: 370px;
+        max-height: 470px;
         padding: 30px;
         border-radius: 5px;
         margin: 10px 10px 10px 10px;

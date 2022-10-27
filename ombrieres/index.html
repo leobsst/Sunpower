@@ -26,11 +26,11 @@
         <script defer src="/includes/js/fa/all.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="https://code.jquery.com/jquery.js"></script>
-        <script src="https://unpkg.com/scrollreveal"></script>
         <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
         <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/js/splide.min.js" defer></script>
-        <script src="/includes/js/scroll.js" defer></script>
+        <script src="/includes/js/main.js" defer></script>
         <script src="/includes/js/nav.js" defer></script>
+        <script src="/includes/js/scroll.js" defer></script>
     <body>
         <nav id="navbar" class="navbar">
             <div class="nav-head">
@@ -59,21 +59,21 @@
             <div class="title-content">
                 <h2>Les ombrières solaires</h2>
                 <hr>
-                <h3>Le futur de la recherche de vos véhicules</h3>
+                <h3>Le futur de la recharge de vos véhicules</h3>
             </div>
             <div class="grid-content-1">
-                <div><p>Le développement des ombrières solaires pour la recharge des véhicules
+                <div class="c1"><p>Le développement des ombrières solaires pour la recharge des véhicules
                     électriques constitue le pilier de notre développement.<br><br>
                     
                     Le projet a été retenu par l’agglomération de Montpellier avec le déploiement
                     de 4 ombrières solaires. Le projet est financé par l’agglomération de
                     Montpellier, le conseil départemental et le conseil régional.<br><br>
                 </p></div>
-                <div></div>
+                <div class="c2"></div>
             </div><br>
             <div class="grid-content-2">
-                <div></div>
-                <div><p>Nous développons actuellement la commercialisation de ce projet en région
+                <div class="c3"></div>
+                <div class="c4"><p>Nous développons actuellement la commercialisation de ce projet en région
                     Occitanie dans le cadre d’un partenariat.<br><br> 
                     
                     L’agglomération de Toulouse s’est
@@ -121,8 +121,10 @@
 
             <div class="bottom-footer">
                 <p>© Sunpower | Tous droits réservés</p>
+                <p>Sunpower, retrouve ton énergie !</p>
             </div>
         </footer> 
-
+        <script src="/includes/js/scrollreveal.js"></script>
+        <div class="top_btn" id="top_btn" onmouseover="ch_op_b(this)" onmouseout="ch_op_a(this)" onClick="GoTop()"><i class="fa-solid fa-arrow-up fa-2x"></i></div>
     </body>
 </html>

@@ -26,10 +26,8 @@
         <script defer src="/includes/js/fa/all.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="https://code.jquery.com/jquery.js"></script>
-        <script src="https://unpkg.com/scrollreveal"></script>
         <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
         <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/js/splide.min.js" defer></script>
-        <script src="/includes/js/main.js" defer></script>
         <script src="/includes/js/map.js"></script>
         <script src="/includes/js/scroll.js" defer></script>
         <script src="/includes/js/nav.js" defer></script>
@@ -59,78 +57,47 @@
             <div class="banner-top">
                 <img src="/includes/assets/background-top.jpg">
             </div>
-            <section class="splide" aria-label="Splide Basic HTML Example">
-                <ul class="splide__pagination"></ul>
+            <div class="pagination">
+                <button><i class="fa-solid fa-circle"></i></button>
+                <button><i class="fa-regular fa-circle"></i></button>
+                <button><i class="fa-regular fa-circle"></i></button>
+            </div>
+            <div class="main_wrapper">
+                <section class="desc_text">
+                    <h2 class="desc_title">A la pointe  de la technologie verte <br>
+                        <span>Panneaux et ombrières solaires</span>
+                    </h2>
+                    <div>
+                        <h3>Implantation</h3>
+                        <p class="text">Implanté dans la région Occitanie et travaillant avec les métropoles montpelliéraines et toulousaines,
+                            Sunpower vous accompagne dans votre projet d’installation de panneaux et d’ombrières solaires.</p>
+                    </div>
+                    <div>
+                        <h3>Engagement</h3>
+                        <p class="text">Pleinement engagé dans la lutte contre le changement climatique et dans la transition énergétique,
+                            Sunpower voit dans chaque projet l’opportunité de mettre en place une action en faveur de l’environnement.
+                            Les ombrières solaires: un concept clé de l’énergie verte. 
+                            Avec des panneaux à haut rendement, il est désormais possible de charger vos voitures électrique grâce à l’énergie solaire.</p>
+                    </div>
+                </section>
+            <section class="splide" aria-label="Ombrières">
+                <ul class="splide__pagination">
+                </ul>
                 <div class="splide__track">
                       <ul class="splide__list">
                           <li class="splide__slide">
-                                <div class="slide1">
-                                    <div class="slide_row_1">
-                                        <div class="crop_img">
-                                            <img id="img_slide1" src="/includes/assets/imgs/ombriere-parking.jpg" alt="">
-                                        </div>
-                                        <h2 class="slide_title">A la pointe  de la technologie verte : <br>
-                                            Panneaux et ombrières solaires</h2>
-                                    </div>
-                                    <div class="slide_row_2">
-                                        <div class="slide1_text">
-                                            <p>Pleinement engagé dans la lutte contre le changement climatique et dans la transition énergétique,
-                                            Sunpower voit dans chaque projet l’opportunité de mettre en place une action en faveur de l’environnement.</p>
-                                            <p>Les ombrières solaires: un concept clé de l’énergie verte. Avec des panneaux à haut rendement,
-                                                il est désormais possible de charger vos voitures électrique grâce à l’énergie solaire.</p>
-                                        </div>
-                                        <p class="slide_info">Implanté dans la région Occitanie et travaillant avec les métropoles montpelliéraines et toulousaines, Sunpower vous accompagne dans votre projet d’installation de panneaux et d’ombrières solaires.</p>
-                                    </div>
-                                </div>
+                                    <img src="/includes/assets/imgs/ombriere-parking.jpg" alt="">
                             </li>
                             <li class="splide__slide">
-                                <div class="slide2">
-                                    <div class="slide_row_1">
-                                        <div class="crop_img">
-                                            <img id="img_slide2" src="/includes/assets/imgs/panneaux-solaires-toit-maison-tuiles.jpeg" alt="" >
-                                        </div>
-                                        <h2 class="slide_title">Aussi bien dans les collectivités que chez les particuliers</h2>
-                                    </div>
-                                    <div>
-                                        <div class="slide_row_2">
-                                            <div class="slide1_text">
-                                                <p>Chez Sunpower, nous participons au développement de vos projets, quel que soit votre structure.</p>
-                                                <p>Que vous soyez une collectivité voulant mettre l’accent sur une démarche écologique de grande ampleur ou bien un particulier souhaitant l’autonomie énergétique, nous vous épaulons dans vos projets.</p>
-                                            </div>
-                                            <p class="slide_info">Nous intervenons aussi bien auprès des collectivités que des particuliers. Un projet ? Contactez-nous via nos formulaires de contact personnalisés!</p>
-                                        </div>                            
-                                    </div>
-                                </div>
+                                    <img src="/includes/assets/imgs/panneaux-solaires-toit-maison-tuiles.jpeg" alt=""> 
                             </li>
                           <li class="splide__slide">
-                            <div class="slide3">
-                                <div class="slide_row_1">
-                                    <div class="crop_img">
-                                        <img id="img_slide3" src="/includes/assets/imgs/rechercheDāveloppement.jpg" alt="" >
-                                    </div>
-                                    <h2 class="slide_title">Recherche <br>
-                                        & <br>
-                                        Développement</h2>
-                                </div>
-                                <div>
-                                    <div class="slide_row_2">
-                                        <div class="slide1_text">
-                                            <p>Un de nos projets phares, que nous menons conjointement avec le CEA et le
-                                                groupe PSA, est un système de recharge par induction à haute puissance sur
-                                                des distances de plus de 1 mètre.</p>
-                                            <p>Nos principaux travaux concernent :<br>
-                                                - L’électronique de puissance<br>
-                                                - Le développement des BMS (Battery Mangement System)<br>
-                                                - L’électronique embarquée de manière générale</p>
-                                        </div>
-                                        <p class="slide_info">Nous intervenons aussi bien auprès des collectivités que des particuliers. Un projet ? Contactez-nous via nos formulaires de contact personnalisés!</p>
-                                    </div>                            
-                                </div>
-                            </div>
+                                    <img src="/includes/assets/imgs/rechercheDāveloppement.jpg" alt=""> 
                           </li>
                       </ul>
                 </div>
               </section>
+            </div>
             <div id="map"></div>
         </div>
 
@@ -172,8 +139,10 @@
 
             <div class="bottom-footer">
                 <p>© Sunpower | Tous droits réservés</p>
+                <p>Sunpower, retrouve ton énergie !</p>
             </div>
         </footer> 
+        <div class="top_btn" id="top_btn" onmouseover="ch_op_b(this)" onmouseout="ch_op_a(this)" onClick="GoTop()"><i class="fa-solid fa-arrow-up fa-2x"></i></div>
         <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4Gw-yZQM1X7S6bq0CK3M51MTQGzV9KrI&callback=initMap" defer></script>
     </body>
 </html>

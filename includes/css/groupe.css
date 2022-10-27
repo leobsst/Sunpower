@@ -1,10 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Poppins:wght@600&display=swap');
+
+h1,h2,h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+p, a {
+    font-family: 'Inter', sans-serif;
+}
+
 div.title-content-1 {
-    position: absolute;
     height: fit-content;
-    width: 120%;
     padding: 45px 10px 45px 10px;
-    left: -100px;
-    top: 350px;
+    margin-left: -10px;
+    margin-right: -10px;;
+    width: 100%;
+    margin-top: -100px;
     background: #181925;
     box-shadow: 0px -10px 12px rgba(0, 0, 0, 0.25), 0px 10px 12px rgba(0, 0, 0, 0.15);
     transform: rotate(-3.51deg);
@@ -20,19 +30,19 @@ div.title-content-1 {
 
 
     div.title-content-1 hr {
-        width: 15%;
+        width: 5%;
         background-color: var(--main-yellow-color);
         border: none;
         height: 1px;
     }
 
 div.title-content-2 {
-    position: absolute;
     height: fit-content;
-    width: 120%;
     padding: 45px 10px 45px 10px;
-    left: -100px;
-    top: 68em;
+    margin-left: -10px;
+    margin-right: -10px;;
+    width: 100%;
+    margin-top: 100px;
     background: #181925;
     box-shadow: 0px -10px 12px rgba(0, 0, 0, 0.25), 0px 10px 12px rgba(0, 0, 0, 0.15);
     transform: rotate(3.51deg);
@@ -55,12 +65,12 @@ div.title-content-2 {
         }
 
 div.title-content-3 {
-    position: absolute;
     height: fit-content;
-    width: 120%;
     padding: 45px 10px 45px 10px;
-    left: -100px;
-    top: 130em;
+    margin-left: -10px;
+    margin-right: -10px;;
+    width: 100%;
+    margin-top: 50px;
     background: #181925;
     box-shadow: 0px -10px 12px rgba(0, 0, 0, 0.25), 0px 10px 12px rgba(0, 0, 0, 0.15);
     transform: rotate(3.51deg);
@@ -85,7 +95,7 @@ div.title-content-3 {
 
 div.group-content {
     width: 80%;
-    margin: 150px auto 0 auto;
+    margin: 80px auto 0 auto;
 }
 
     div.group-content p {
@@ -103,7 +113,7 @@ div.group-content {
 
 div.founders-content {
     width: 100%;
-    margin: 380px auto 0 auto;
+    margin: 50px auto 0 auto;
     display: flex;
     justify-content: center;
 }
@@ -115,13 +125,13 @@ div.founders-content {
     div.founders-content div.cards div.card {
         display: flex;
         justify-content: center;
-        margin: 50px 0 50px 0;
+        margin: 100px 0 100px 0;
     }
 
     div.founders-content div.cards div.card img.founder-img {
         width: 7em;
         height: auto;
-        position: absolute;
+        border-radius: 5px;
     }
 
     div.founders-content div.cards div.card div.founder-infos {
@@ -135,9 +145,9 @@ div.founders-content {
     }
 
     div.founders-content div.cards div.card:nth-child(1) img {
-        margin-left: -210px;
-        margin-top: -30px;
-        border-radius: 5px;
+        margin-top: -100px;
+        margin-left: -120px;
+        float: left;
         -webkit-box-shadow: 30px 28px 15px -15px rgba(0,0,0,0.5); 
         box-shadow: 30px 28px 15px -15px rgba(0,0,0,0.5);
     }
@@ -147,23 +157,24 @@ div.founders-content {
     }
 
     div.founders-content div.cards div.card:nth-child(2) img {
-        margin-left: 210px;
-        margin-top: -30px;
-        border-radius: 5px;
+        margin-top: -100px;
+        margin-right: -120px;
+        float: right;
         -webkit-box-shadow: -30px 30px 15px -15px rgba(0,0,0,0.5); 
         box-shadow: -30px 30px 15px -15px rgba(0,0,0,0.5);
     }
     div.founders-content div.cards div.card:nth-child(2) div.founder-infos {
         background-color: var(--medium-gray);
         color: var(--main-font-color);
-        text-align: right;
         border-radius: 5px;
+        text-align: right;
     }
 
+
     div.founders-content div.cards div.card:nth-child(3) img {
-        margin-left: -210px;
-        margin-top: -30px;
-        border-radius: 5px;
+        margin-top: -100px;
+        margin-left: -120px;
+        float: left;
         -webkit-box-shadow: 30px 28px 15px -15px rgba(0,0,0,0.5); 
         box-shadow: 30px 28px 15px -15px rgba(0,0,0,0.5);
     }
@@ -175,14 +186,15 @@ div.founders-content {
 
 
 div.partners-content {
-    margin: 400px 0 50px 0;
+    margin: 80px 0 50px 0;
     display: inline-flex;
     justify-content: center;
     width: 100%;
+    align-items: center;
 }
 
 div.partners-content img {
-    width: 15%;
-    height: 15%;
+    width: 10%;
+    height: 10%;
     margin: 0 20px 0 20px;
 }

@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Poppins:wght@600&display=swap');
+
+h1,h2,h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+p, a {
+    font-family: 'Inter', sans-serif;
+}
 
 /* STYLE DE LA MAP */
 #map {
@@ -7,118 +16,133 @@
     margin-bottom: -15px;
 }
 
-/* PARAMETER POUR LE STYLE DU SLIDE */
+/* MAIN WRAPPER */
+.main_wrapper {
+    width: 100%;
+    margin-top: 3vh;
+}
 
-  
-.splide__pagination__page {
-    background-color: var(--main-yellow-color);
-    border-radius: 50%;
-    height: 2em;
-    width: 2em;
-    margin-inline: 1em;
+.main_wrapper section {
+    flex: 1;
+}
+
+.desc_text{
+    background-color: var(--main-green-color);
+    margin: 0;
+    padding: 2vw;
+
+}
+
+.desc_text h2 {
+    margin: 0;
+    text-align: center;
+    color: var(--main-font-color);
+    margin-block: 3vh;
+    font-size:2.3vmax;
+    background-color: transparent;
+    text-shadow: #000000;
+}
+
+.desc_text h3::after {
+    content: "";
+    display: block;
+    height: 3px;
+    margin-top: 3px;
+    width: 10%;
+    background: var(--main-yellow-color);
+}
+
+.desc_text div h3 {
+    margin: 0;
+    margin-block: 2vh;
+    color: var(--main-font-color);
+    font-size:1.8vmax;
+}
+
+.desc_text div p {
+    margin: 0;
+    color: var(--main-font-color);
+    text-justify: auto;
+    font-size:1.6vmax;
+}
+
+
+@media (min-width: 832px) {
+    .main_wrapper {
+        display: flex;
+    }
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination button {
+    width: fit-content;
+    background-color: transparent;
     border: none;
 }
 
-.splide__slide div {
-    display: flex;
+.pagination button svg {
+    margin-inline: 1em;
+    margin-top: 2em;
+    color: var(--main-yellow-color);
 }
 
-/* //////////////////////////////// */
+@media (max-width: 832px) {
 
-/* STYLE SLIDE 1 + LAYOUT */
-
-.slide1 {
-    display: flex;
-    flex-direction: column;
-    margin-inline: 3em;
-}
-
-.slide2 {
-    display: flex;
-    flex-direction: column;
-    margin-inline: 3em;
-}
-
-.slide3 {
-    display: flex;
-    flex-direction: column;
-    margin-inline: 3em;
-}
-
-.slide_row_1 {
-    flex-direction: column-reverse;
-}
-
-.slide_row_2 {
-    flex-direction: column-reverse;
-}
-
-.slide_title {
-    text-align: center;
-    color: var(--main-font-color);
-    font-weight: bold;
-    font-size: 1.5em;
-}
-
-.slide_info {
-    margin: 0;
-    background-color: var(--main-green-color);
-    color: var(--main-font-color);
-    letter-spacing: 1px;
-    font-weight: bold;
-    padding: 1.5em;
-    font-size: 1.2em;
-    line-height: 1.8em;
-    text-align: center;
-    margin-block: 3em;
-}
-.slide1_text {
-    flex-direction: column;
-    color: var(--main-font-color);
-}
-
-.slide1_text p {
-    font-size: 1.2em;
-    font-weight: bold;
-    letter-spacing: 1px;
-}
-
-/* STYPE SLIDE 2 + LAYOUT */
-
-
-
-/* GESTION DES TAILLES DES IMAGES EN MOBILE FIRST */
-/* IMAGE SLIDE 1 */
-.crop_img #img_slide1 {
-    width: 100%;
-    height: 20em;
-}
-
-/* IMAGE SLIDE 2 */
-.crop_img #img_slide2 {
-    width: 100%;
-    height: 20em;  
-}
-
-/* IMAGE SLIDE 3 */
-.crop_img #img_slide3 {
-    width: 100%;
-    height: 20em;  
-}
-
-/* IMAGE CROPPER */
-.crop_img {
-    height: 12em;
-    overflow: hidden;
-}
-/* ////////////////////////////////////////////// */
-
-
-@media (max-width: 1200px) {
-}
-
-@media (max-width: 978px) {
+    .desc_text{
+        padding: 2vw;
+        padding-bottom: 3em;
+    }
+    
+    .desc_text h2 {
+        margin-block: 3vh;
+        font-size:2.8vmax;
+    }
+    
+    .desc_text h3:after {
+        content: "";
+        display: block;
+        height: 3px;
+        bottom: -10px;
+        width: 10%;
+        background: var(--main-yellow-color);
+    }
+    
+    .desc_text div h3 {
+        margin-block: 2vh;
+        font-size:2.6vmax;
+    }
+    
+    .desc_text div p {
+        text-justify: auto;
+        font-size: 2.4vmax;
+    }
+    
 }   
 
-/* .slide3 {
-}  */
+
+/* /////////////////////////////////////////////////////////////// */
+
+
+
+
+#splide01-slide03 {
+    height: 100%;
+}
+
+.splide__slide img {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    object-fit: fill;
+}
+.splide__track,
+.splide__list,
+.splide__slide{
+    height: 100%;
+    width: 100%;
+}
