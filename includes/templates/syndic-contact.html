@@ -1,0 +1,64 @@
+<div id="form-container">
+    <div class="select-type"> 
+        <div class="cards">
+            <a onClick="load_pro()">
+                <div class="card pro">
+                    <div class="icon-type">
+                        <i class="fa-solid fa-briefcase fa-2x"></i>
+                    </div>
+                    <div class="name-type">
+                        <p>Entreprise<br>Collectivité</p>
+                    </div>
+                </div>
+            </a>
+            <a onClick="load_lambda()">
+                <div class="card lambda">
+                    <div class="icon-type">
+                        <i class="fa-solid fa-user-group fa-2x"></i>
+                    </div>
+                    <div class="name-type">
+                        <p>Particulier</p>
+                    </div>
+                </div>
+            </a>
+            <a onClick="load_syndic()">
+                <div class="card syndic">
+                    <div class="icon-type">
+                        <i class="fa-solid fa-building fa-2x"></i>
+                    </div>
+                    <div class="name-type">
+                        <p>Syndic de copropriété</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- Formulaire -->            
+    <div class="mailing-form" id="mailing-form">
+                    
+        <div class="infos">
+            <h2>Service syndic</h2>
+            <hr>
+            <span><i class="fa-solid fa-phone"></i><p>08.32.19.23.83</p></span>
+            <span><i class="fa-solid fa-location-dot"></i><p>12 Rue de l'environnement<br>34090 Montpellier<br>FRANCE</p></span>
+            <span><i class="fa-solid fa-envelope"></i><p>sales@sunpower.com</p></span>
+        </div>
+    
+        <form action="/" method="post">
+    
+            <input type="text" name="lname" id="lname" required placeholder="Raison social">
+            <input type="text" name="fname" id="fname" required placeholder="Qualité"><br>
+            <input type="text" name="lname" id="lname" required placeholder="Nom">
+            <input type="text" name="fname" id="fname" required placeholder="Prénom"><br>
+            <input type="text" name="adresse" id="adresse" required placeholder="Adresse">
+            <input type="email" name="email" id="email" required placeholder="Email"><br>
+            <input type="tel" name="tel" id="tel" required placeholder="Téléphone">
+            <button type="button" id="upload"><i class="fa-solid fa-upload"></i>Joindre un fichier</button>
+            
+            <textarea name="description" id="description" cols="30" rows="10" required placeholder="Description"></textarea><br>
+            <input type="submit" value="Envoyer ➝">
+    
+        </form>
+    </div>
+</div>

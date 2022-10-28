@@ -14,7 +14,8 @@
         <link rel="stylesheet" href="/includes/css/header.css">
         <link rel="stylesheet" href="/includes/css/mobile/header.mobile.css">
         <link rel="stylesheet" href="/includes/css/footer.css">
-        <link rel="stylesheet" href="/includes/css/ùpbome/footer.mobile.css">
+        <link rel="stylesheet" href="/includes/css/mobile/footer.mobile.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.6.9/sweetalert2.min.css">
         <link href="/includes/css/fa/all.css" rel="stylesheet">
         <link rel="apple-touch-icon" sizes="180x180" href="/includes/assets/icons/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/includes/assets/icons/favicon-32x32.png">
@@ -33,7 +34,9 @@
         <script src="/includes/js/nav.js" defer></script>
         <script src="/includes/js/scroll.js" defer></script>
         <script src="/includes/js/contact.js" defer></script>
-
+        <script src="/includes/js/anim.js" defer></script>
+        <script src="https://unpkg.com/dropzone@5/dist/min/dropzone.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.6.9/sweetalert2.min.js"></script>
     <body>
 
         <!-- Navbar -->
@@ -68,92 +71,53 @@
 
 <!-- Titre ou section de la page -->
 
-            <div class="title-content"> 
-                <h2>Nous contacter</h2>
+            <div class="title-content" aria-label="Nous contacter"> 
+                <h2>ㅤ</h2>
                 <hr>
             </div>
 
 <!-- Selection du type de demandeur -->
 
-            <div class="select-type"> 
-                <div class="cards">
-                    <div class="card pro">
-                        <div class="icon-type">
-                            <i class="fa-solid fa-briefcase fa-2x"></i>
-                        </div>
-                        <div class="name-type">
-                            <p>Entreprise<br>Collectivité</p>
-                        </div>
-                    </div>
-
-                    <div class="card lambda">
-                        <div class="icon-type">
-                            <i class="fa-solid fa-user-group fa-2x"></i>
-                        </div>
-                        <div class="name-type">
-                            <p>Particulier</p>
-                        </div>
-                    </div>
-
-                    <div class="card syndic">
-                        <div class="icon-type">
-                            <i class="fa-solid fa-building fa-2x"></i>
-                        </div>
-                        <div class="name-type">
-                            <p>Syndic de copropriété</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-<!-- Formulaire -->            
-
-            <div class="mailing-form">
-                
-                <div class="infos">
-                    <h2>service particulier</h2>
-                    <hr>
-                    <span><i class="fa-solid fa-phone"></i><p>08.32.21.43.12</p></span>
-                    <span><i class="fa-solid fa-location-dot"></i><p>30 Rue du soleil<br>34000 Montpellier<br>FRANCE</p></span>
-                    <span><i class="fa-solid fa-envelope"></i><p>sales@sunpower.com</p></span>
-                </div>
-
-                <form action="/" method="post">
-
-                    <input type="text" name="lname" id="lname" required placeholder="Nom">
-                    <input type="text" name="fname" id="fname" required placeholder="Prénom"><br>
-                    <input type="email" name="email" id="email" required placeholder="Email">
-                    <input type="tel" name="tel" id="tel" required placeholder="Téléphone"><br>
-                    <textarea name="description" id="description" cols="30" rows="10" required placeholder="Description"></textarea><br>
-                    <input type="submit" value="Envoyer ➝">
-
-                </form>
-            </div>
-
-            <div class="mailing-form">
-                
-                <div class="infos">
-                    <h2>Service Copropriété</h2>
-                    <hr>
-                    <span><i class="fa-solid fa-phone"></i><p>08.32.19.23.83</p></span>
-                    <span><i class="fa-solid fa-location-dot"></i><p>12 Rue de l'environnement<br>34090 Montpellier<br>FRANCE</p></span>
-                    <span><i class="fa-solid fa-envelope"></i><p>sales@sunpower.com</p></span>
-                </div>
-
-                <form action="/" method="post">
-
-                    <input type="text" name="lname" id="lname" required placeholder="Nom">
-                    <input type="text" name="fname" id="fname" required placeholder="Prénom"><br>
-                    <input type="email" name="email" id="email" required placeholder="Email">
-                    <input type="tel" name="tel" id="tel" required placeholder="Téléphone"><br>
-                    <textarea name="description" id="description" cols="30" rows="10" required placeholder="Description"></textarea><br>
-                    <input type="submit" value="Envoyer ➝">
-
-                </form>
-            </div>
-
             
+            <div id="form-container">
+                <div class="select-type"> 
+                    <div class="cards">
+                        <a onClick="load_pro()">
+                            <div class="card pro">
+                                <div class="icon-type">
+                                    <i class="fa-solid fa-briefcase fa-2x"></i>
+                                </div>
+                                <div class="name-type">
+                                    <p>Entreprise<br>Collectivité</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a onClick="load_lambda()">
+                            <div class="card lambda">
+                                <div class="icon-type">
+                                    <i class="fa-solid fa-user-group fa-2x"></i>
+                                </div>
+                                <div class="name-type">
+                                    <p>Particulier</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a onClick="load_syndic()">
+                            <div class="card syndic">
+                                <div class="icon-type">
+                                    <i class="fa-solid fa-building fa-2x"></i>
+                                </div>
+                                <div class="name-type">
+                                    <p>Syndic de copropriété</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
 
+                <!-- Formulaire -->            
+
+            </div>
         </div>
 
 <!-- Footer -->

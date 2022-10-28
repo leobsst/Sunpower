@@ -104,22 +104,25 @@ a {
 }
 
 .splide__pagination__page {
-    margin-inline: 0.5em;
+    margin: 5px;
     display: inline-block;
-    width: 30px;
-    height: 30px;
+    width: 60px;
+    height: 60px;
     background: transparent;
-    border-radius: 50%;
+    border-radius: 100%;
     border: 3px solid var(--main-yellow-color);
     font-size: 24px;
     font-family: "Abril Fatface", serif;
+    transform: scale(0.5);
+    cursor: pointer;
 }
 
 .splide__pagination {
     position: absolute;
     transform: translateY(-4em);
-    left: -5.1em;
+    left: -53.5%;
     padding: 0;
+    width: 100%;
 }
 
 

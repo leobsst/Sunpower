@@ -1,12 +1,11 @@
-@media (max-width: 862px) {
+/* @media (max-width: 862px) {
 
-/* PASSAGE EN COLONNE */
 
     div.mailing-form {
         width: 80%!important;
         flex-direction: column;
         align-items: center;
-        height: 800px!important;
+        height: 100%!important;
     }
 
         div.mailing-form div.infos {
@@ -27,4 +26,4 @@
             height: 38px;
         }
 
-}
+} */

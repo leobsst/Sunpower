@@ -10,7 +10,7 @@ p, a {
 
 /* BANNIERE TITRE GROUPE */
 
-div.title-content-1 {
+div.title-content {
     height: fit-content;
     padding: 45px 10px 45px 10px;
     margin-left: -10px;
@@ -24,14 +24,14 @@ div.title-content-1 {
     color: var(--main-yellow-color);
 }
 
-    div.title-content-1 h2,
-    div.title-content-1 h3,
-    div.title-content-1 hr {
+    div.title-content h2,
+    div.title-content h3,
+    div.title-content hr {
         transform: rotate(3.51deg)!important;
     }
 
 
-    div.title-content-1 hr {
+    div.title-content hr {
         width: 5%;
         background-color: var(--main-yellow-color);
         border: none;

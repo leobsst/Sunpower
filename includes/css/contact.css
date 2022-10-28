@@ -123,8 +123,6 @@ textarea {
 div.mailing-form div.infos {
     border-radius: 10px;
     background-color: var(--main-green-color);
-    padding: 20px;
-    width: 30%;
 }
 
 div.mailing-form div.infos h2 {

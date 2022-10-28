@@ -1,8 +1,6 @@
 const sr = ScrollReveal();
 
 sr.reveal('.c1', {
-//origin: 'top',
-//distance: '50px',
     duration: 500,
     scale: 0.5,
     reset: false
@@ -80,3 +78,11 @@ sr.reveal('.p5', {
     duration: 2500,
     reset: false
 });
+
+
+sr.reveal('.desc_title', {
+    origin: 'left',
+    distance: '50px',
+    duration: 2500,
+    reset: true
+})

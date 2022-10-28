@@ -16,6 +16,7 @@ document.addEventListener( 'DOMContentLoaded', function() {
     splide.on( 'pagination:updated', function () {
         // retourne l'index du slide actif 
         let index = splide.index
+        
         //Conditionnel qui permet d'afficher le bon texte selon l'index du slide
         if (index === 0) {
           title.innerHTML = "A la pointe de la technologie verte <br> Panneaux et ombrières solaires";
@@ -41,8 +42,3 @@ document.addEventListener( 'DOMContentLoaded', function() {
     // Créer le slider
     splide.mount();
   } );
-
-
-// let group = [title,subtitle1,subtitle2,text1,text2]
-
-
