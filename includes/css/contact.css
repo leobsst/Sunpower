@@ -71,9 +71,106 @@ div.select-type {
 
 /* FORMULAIRE */    
 
-div.mailing-form {
+/* .upload {
+    width: 210px;
+    margin: 5px 0 5px 0;
+    height: 38px;
+    border-radius: 15px;
+    border: none;
+    background-color: var(--main-green-color);
+    color: var(--main-yellow-color);
+}
+.upload svg {
+    margin-right: 10px;
+} */
+
+.mailing-form {
+    display: flex;
+    margin-inline: 5em;
+    background-color: var(--main-yellow-color);
+}
+
+.mailing-form .infos {
+    flex: 1;
+}
+
+.mailing-form .form_wrapper {
+    flex: 3;
+}
+
+.sidebyside {
+    display: flex;
+    gap: 3em;
+    margin-block: 2em;
+}
+
+.sidebyside input[type="text"],
+.sidebyside input[type="email"],
+.sidebyside input[type="tel"] {
+    width: 80%;
+    height: 2rem;
+}
+
+.sidebyside input[type="text"],
+.sidebyside input[type="email"],
+.sidebyside input[type="tel"],
+textarea {
+        background-color: var(--main-font-color);
+        border: 3px solid var(--main-green-color);
+        border-radius: 5px;
+    }
+
+div.mailing-form div.infos {
+    border-radius: 10px;
+    background-color: var(--main-green-color);
+    padding: 20px;
+    width: 30%;
+}
+
+div.mailing-form div.infos h2 {
+    color: var(--main-yellow-color);
+    text-transform: uppercase;
+}
+
+div.mailing-form div.infos hr {
+    width: 50%;
+    margin-top: -10px;
+    margin-bottom: 15px;
+    border: none;
+    background-color: var(--main-yellow-color);
+    height: 2px;
+    border-radius: 100%;
+}
+
+div.mailing-form div.infos span {
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+div.mailing-form div.infos span p {
+    color: var(--main-font-color);
+    margin: 10px 10px 10px 10px;
+}
+
+div.mailing-form div.infos span svg {
+    width: 15px;
+    height: 15px;
+    padding: 5px;
+    border-radius: 100%;
+    background-color: var(--main-yellow-color);
+    color: var(--main-green-color);
+}
+/* div.mailing-form div.infos {
+    border-radius: 10px;
+    background-color: var(--main-green-color);
+    padding: 20px;
+    height: 300px;
+    width: 30%;
+} */
+
+/* div.mailing-form {
     text-align: center;
-    width: 750px;
     margin: 100px auto 0 auto;
     color: var(--main-dark-color);
     display: flex;
@@ -82,7 +179,7 @@ div.mailing-form {
     background-color: var(--main-yellow-color);
     border-radius: 10px;
     padding: 20px;
-    min-height: 400px;
+    height: fit-content
 }
 
     div.mailing-form div.infos {
@@ -141,6 +238,8 @@ div.mailing-form {
         height: 38px;
     }
 
+    
+
     div.mailing-form form textarea {
         resize: none;
         width: 97.5%;
@@ -148,14 +247,6 @@ div.mailing-form {
         height: 207px;
     }
 
-    div.mailing-form form input[type="text"],
-    div.mailing-form form input[type="email"],
-    div.mailing-form form input[type="tel"],
-    div.mailing-form form textarea {
-        background-color: var(--main-font-color);
-        border: 4px solid var(--main-green-color);
-        border-radius: 15px;
-    }
 
     div.mailing-form form input[type="submit"] {
         background-color: var(--main-green-color);
@@ -167,3 +258,20 @@ div.mailing-form {
         float: right;
         cursor: pointer;
     }
+
+    .upload {
+        width: 210px;
+        margin: 5px 0 5px 0;
+        height: 38px;
+        border-radius: 15px;
+        border: none;
+        background-color: var(--main-green-color);
+        color: var(--main-yellow-color);
+    }
+    .upload svg {
+        margin-right: 10px;
+    }
+
+    .dropzone {
+        display: none;
+    } */
