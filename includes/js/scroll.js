@@ -2,7 +2,18 @@ window.addEventListener("scroll", function(event) {
 
     let y = this.scrollY;
     const SizeNavBar = document.getElementById("navbar");
-    const TopBtn = this.document.getElementById("top_btn")
+    const TopBtn = this.document.getElementById("top_btn");
+    const BannerTop = document.querySelector(".banner-top img");
+
+    let pos = 5;
+    let op = 1;
+    let newPos = pos+y/4+"px";
+    let newOp = op-y/280;
+
+    BannerTop.style.marginTop = newPos;
+    BannerTop.style.opacity = newOp;
+
+
     if (y >= 100) {
         SizeNavBar.classList.add("scrolled");
     }
@@ -18,6 +29,8 @@ window.addEventListener("scroll", function(event) {
         TopBtn.style.opacity = "0";
         TopBtn.style.zIndex = "-1"
     }
+
+    
   
 }, false);
 

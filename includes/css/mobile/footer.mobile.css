@@ -1,3 +1,5 @@
+/* PASSAGE FOOTER EN COLONNE */
+
 @media (max-width: 962px) {
     #upper-footer {
         flex-direction: column!important;

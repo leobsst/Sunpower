@@ -1,4 +1,6 @@
 @media (max-width: 962px) {
+
+    /* RAPPROCHEMENT ECART LIENS NAVBAR */
     .nav-links {
         gap: 2em;
         margin-right: 2em;
@@ -6,6 +8,9 @@
 }
 
 @media (max-width: 832px) {
+
+    /* NAV DANS BURGER MENU */
+
     .nav-links {
         margin-block: 0;
         margin-inline: 0;
@@ -43,6 +48,8 @@
         display: block;
         background-color: var(--main-dark-color);
     }
+
+/* BURGER MENU */
 
     .burger {
         margin-right: 3em;

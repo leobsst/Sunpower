@@ -4,6 +4,8 @@ footer {
     background-color: var(--main-darker-color);
 }
 
+/* LIENS FOOTER */
+
 #upper-footer {
     display: flex;
     justify-content: space-around;
@@ -17,6 +19,8 @@ footer {
     color: var(--main-yellow-color);
 }
 
+/* COPYRIGHT ET MENTIONS LEGALES */
+
 .bottom-footer {
     background-color: var(--medium-gray);
     color: white;
@@ -25,6 +29,8 @@ footer {
     display: flex;
     justify-content: space-around;
 }
+
+/* FORMULAIRE NEWSLETTER */
 
 #logo-and-form {
     text-align: center;

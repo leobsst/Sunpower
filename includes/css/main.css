@@ -15,14 +15,41 @@ a {
 #map {
     margin-top: 3em;
     height: 400px;
-    width: 100%;
     margin-bottom: -15px;
+    margin-inline: 3em;
 }
+
+.title-content {
+    height: fit-content;
+    padding: 45px 10px 45px 10px;
+    margin-left: -10px;
+    margin-right: -10px;;
+    width: 100%;
+    margin-top: 19em;
+    background: #181925;
+    box-shadow: 0px -10px 12px rgba(0, 0, 0, 0.25), 0px 10px 12px rgba(0, 0, 0, 0.15);
+    transform: rotate(-3.51deg);
+    text-align: center;
+    color: var(--main-yellow-color);
+}
+
+.title-content h2,
+    .title-content h3,
+    .title-content hr {
+        transform: rotate(3.51deg)!important;
+    }
+
+
+    .title-content hr {
+        width: 5%;
+        background-color: var(--main-yellow-color);
+        border: none;
+        height: 1px;
+    }
 
 /* MAIN WRAPPER */
 .main_wrapper {
-    width: 100%;
-    margin-top: 15vh;
+    margin: 15vh 3em 0 3em;
 }
 
 .main_wrapper section {
@@ -41,7 +68,7 @@ a {
     text-align: center;
     color: var(--main-font-color);
     margin-block: 3vh;
-    font-size: 2.3vmax;
+    font-size: 2vmax;
     background-color: transparent;
     text-shadow: #000000;
 }
@@ -59,23 +86,17 @@ a {
     margin: 0;
     margin-block: 2vh;
     color: var(--main-font-color);
-    font-size: 1.8vmax;
+    font-size: 1.3vmax;
 }
 
 .desc_text div p {
     margin: 0;
     color: var(--main-font-color);
     text-justify: auto;
-    font-size: 1.6vmax;
+    font-size: 1.3vmax;
 }
 
-
-@media (min-width: 832px) {
-    .main_wrapper {
-        display: flex;
-    }
-
-}
+/* SLIDER */
 
 .splide__pagination__page.is-active {
     background: var(--main-yellow-color);
@@ -102,57 +123,11 @@ a {
 }
 
 
-@media (max-width: 832px) {
-
-    .desc_text {
-        padding: 2vw;
-        padding-bottom: 3em;
-        margin-bottom: 3em;
-    }
-
-    .desc_text h2 {
-        margin-block: 3vh;
-        font-size: 2.8vmax;
-    }
-
-    .desc_text h3:after {
-        content: "";
-        display: block;
-        height: 3px;
-        bottom: -10px;
-        width: 10%;
-        background: var(--main-yellow-color);
-    }
-
-    .desc_text div h3 {
-        margin-block: 2vh;
-        font-size: 2.6vmax;
-    }
-
-    .desc_text div p {
-        text-justify: auto;
-        font-size: 2.4vmax;
-    }
-
-    .splide__pagination {
-        position: initial;
-        transform: translateY(-1.4em);
-    }
-
-}
 
 
 
 .splide__slide img {
     height: 100%;
     width: 100%;
-    overflow: hidden;
-    object-fit: fill;
-}
-
-.splide__track,
-.splide__list,
-.splide__slide {
-    height: 100%;
-    width: 100%;
+    object-fit: cover;
 }

@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="/includes/css/header.css">
         <link rel="stylesheet" href="/includes/css/mobile/header.mobile.css">
         <link rel="stylesheet" href="/includes/css/footer.css">
-        <link rel="stylesheet" href="/includes/css/mobile/footer.mobile.css">        
+        <link rel="stylesheet" href="/includes/css/ùpbome/footer.mobile.css">
         <link href="/includes/css/fa/all.css" rel="stylesheet">
         <link rel="apple-touch-icon" sizes="180x180" href="/includes/assets/icons/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/includes/assets/icons/favicon-32x32.png">
@@ -32,8 +32,13 @@
         <script src="/includes/js/main.js" defer></script>
         <script src="/includes/js/nav.js" defer></script>
         <script src="/includes/js/scroll.js" defer></script>
+        <script src="/includes/js/contact.js" defer></script>
+
     <body>
-        <nav id="navbar" class="navbar"> <!-- Navbar -->
+
+        <!-- Navbar -->
+
+        <nav id="navbar" class="navbar"> 
             <div class="nav-head">
               <div>
                 <a href="/"><img src="/includes/assets/icons/mstile-70x70.png" alt="logo sunpower" id="logo_icon"></a>
@@ -54,16 +59,23 @@
         </nav>
 
         <div class="body-content">
-            <div class="banner-top"> <!-- Bannière de haut de page -->
+
+<!-- Bannière de haut de page -->
+
+            <div class="banner-top"> 
                 <img src="/includes/assets/imgs/ombriere1.jpg">
             </div>
 
-            <div class="title-content"> <!-- Titre ou section de la page -->
+<!-- Titre ou section de la page -->
+
+            <div class="title-content"> 
                 <h2>Nous contacter</h2>
                 <hr>
             </div>
 
-            <div class="select-type"> <!-- Selection du type de demandeur -->
+<!-- Selection du type de demandeur -->
+
+            <div class="select-type"> 
                 <div class="cards">
                     <div class="card pro">
                         <div class="icon-type">
@@ -94,6 +106,8 @@
                 </div>
             </div>
 
+<!-- Formulaire -->            
+
             <div class="mailing-form">
                 
                 <div class="infos">
@@ -111,15 +125,43 @@
                     <input type="email" name="email" id="email" required placeholder="Email">
                     <input type="tel" name="tel" id="tel" required placeholder="Téléphone"><br>
                     <textarea name="description" id="description" cols="30" rows="10" required placeholder="Description"></textarea><br>
-                    <input type="submit" value="S'abonner ➝">
+                    <input type="submit" value="Envoyer ➝">
 
                 </form>
             </div>
 
+            <div class="mailing-form">
+                
+                <div class="infos">
+                    <h2>Service Copropriété</h2>
+                    <hr>
+                    <span><i class="fa-solid fa-phone"></i><p>08.32.19.23.83</p></span>
+                    <span><i class="fa-solid fa-location-dot"></i><p>12 Rue de l'environnement<br>34090 Montpellier<br>FRANCE</p></span>
+                    <span><i class="fa-solid fa-envelope"></i><p>sales@sunpower.com</p></span>
+                </div>
+
+                <form action="/" method="post">
+
+                    <input type="text" name="lname" id="lname" required placeholder="Nom">
+                    <input type="text" name="fname" id="fname" required placeholder="Prénom"><br>
+                    <input type="email" name="email" id="email" required placeholder="Email">
+                    <input type="tel" name="tel" id="tel" required placeholder="Téléphone"><br>
+                    <textarea name="description" id="description" cols="30" rows="10" required placeholder="Description"></textarea><br>
+                    <input type="submit" value="Envoyer ➝">
+
+                </form>
+            </div>
+
+            
+
         </div>
 
+<!-- Footer -->
 
-        <footer> <!-- Footer -->
+        <footer> 
+
+<!-- Liens footer -->
+
             <div id="upper-footer">
                 <div id="footer-left">
                     <div class="footer-links">
@@ -145,6 +187,9 @@
                         <a href="/contact/"><h2>Nous contacter</h2></a>
                     </div>        
                 </div>
+
+<!-- Formulaire newsletter -->
+
                 <div id="logo-and-form">
                     <form action="https://bit.ly/3TG3Iyl" method="POST">
                             <img src="/includes/assets/icons/mstile-70x70.png" alt="logo">
@@ -155,12 +200,17 @@
                 </div>
             </div>
 
+<!-- Copyright et mentions légales -->
+
             <div class="bottom-footer">
                 <p>© Sunpower | Tous droits réservés</p>
                 <p>Sunpower, retrouve ton énergie !</p>
             </div>
         </footer> 
         <script src="/includes/js/scrollreveal.js"></script>
+
+<!-- Bouton haut de page -->
+
         <div class="top_btn" id="top_btn" onmouseover="ch_op_b(this)" onmouseout="ch_op_a(this)" onClick="GoTop()"><i class="fa-solid fa-arrow-up fa-2x"></i></div> <!-- Bouton vers haut de page -->
     </body>
 </html>

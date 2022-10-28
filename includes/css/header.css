@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap');
+
+
 :root {
     --main-yellow-color: #FAC86F;
     --main-dark-color: #242530;
@@ -7,7 +10,6 @@
     --medium-gray: #2C2E44;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap');
 
 html,
 body {
@@ -35,6 +37,8 @@ a:focus {
     transition: .2s;
 }
 
+/* NAVBAR */
+
 nav.navbar {
     background-color: var(--main-darker-color);
     width: 100%;
@@ -49,10 +53,10 @@ nav.navbar {
     transition: .2s ease-in-out;
 }
 
-    nav.navbar.scrolled {
-        height: 85px!important;
-        transition: .2s ease-in-out;
-    }
+nav.navbar.scrolled {
+    height: 85px!important;
+    transition: .2s ease-in-out;
+}
 
 .nav-head {
     display: flex;
@@ -122,24 +126,30 @@ a.nav-link.current {
     transform: translate(0);
 }
 
+/* BODY */
+
 div.body-content {
     margin-top: 85px;
     z-index: 1;
     background-color: var(--main-dark-color);
 }
 
+/* BANNIERE */
+
 div.banner-top {
     width: 100%;
-    z-index: -1;
+    z-index: 0;
+    position: absolute;
+    top: 20px;
 }
 
     div.banner-top img {
         width: 100%;
         height: 350px;
         object-fit: cover;
-        margin-top: auto;
     }
 
+/* BOUTON HAUT DE PAGE */
 
 div.top_btn {
     color: var(--main-dark-color);

@@ -1,19 +1,22 @@
-
-let title = document.getElementsByClassName("desc_title")
+// Assigne à des variables tous les élements à propose de la description 
+let title = document.getElementById("desc_title")
 let subtitle1 = document.getElementById("subtitle_1")
 let subtitle2 = document.getElementById("subtitle_2")
 let text1 = document.getElementById("text_1")
 let text2 = document.getElementById("text_2")
 
+
+// Attends le chargement complet du DOM et initialise le splide
 document.addEventListener( 'DOMContentLoaded', function() {
     const splide = new Splide( '.splide', {
       arrows: false,
     } );
     
+    // Ecoute si il y a un changement de slide
     splide.on( 'pagination:updated', function () {
+        // retourne l'index du slide actif 
         let index = splide.index
-        console.log(index)
-
+        //Conditionnel qui permet d'afficher le bon texte selon l'index du slide
         if (index === 0) {
           title.innerHTML = "A la pointe de la technologie verte <br> Panneaux et ombrières solaires";
           subtitle1.innerHTML = "Implentation";
@@ -34,10 +37,12 @@ document.addEventListener( 'DOMContentLoaded', function() {
           text2.innerHTML = "Un de nos projets phares, que nous menons conjointement avec le CEA et le groupe PSA, est un système de recharge par induction à haute puissance sur des distances de plus de 1 mètre. Nos principaux travaux concernent <br> - L’électronique de puissance <br> - Le développement des BMS (Battery Mangement System) <br>- L’électronique embarquée de manière générale";
         }
     } );
+
+    // Créer le slider
     splide.mount();
   } );
 
 
-
+// let group = [title,subtitle1,subtitle2,text1,text2]
 
 

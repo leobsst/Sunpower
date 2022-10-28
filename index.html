@@ -11,6 +11,7 @@
     <meta name="msapplication-config" content="/includes/assets/icons/browserconfig.xml">
     <meta name="theme-color" content="#242530">
     <link rel="stylesheet" href="/includes/css/main.css">
+    <link rel="stylesheet" href="/includes/css/mobile/main.mobile.css">
     <link rel="stylesheet" href="/includes/css/header.css">
     <link rel="stylesheet" href="/includes/css/mobile/header.mobile.css">
     <link rel="stylesheet" href="/includes/css/footer.css">
@@ -34,10 +35,13 @@
     <script src="/includes/js/scroll.js" defer></script>
     <script src="/includes/js/nav.js" defer></script>
     <script src="/includes/js/slider.js" defer></script>
+    <script src="/includes/js/anim.js" defer></script>
 
 <body>
+
+            <!--  Navbar -->
+            
     <nav id="navbar" class="navbar" aria-label="navbar">
-        <!--  Navbar -->
         <div class="nav-head">
             <div>
                 <a href="/"><img src="/includes/assets/icons/mstile-70x70.png" alt="logo sunpower" id="logo_icon"></a>
@@ -58,15 +62,23 @@
     </nav>
 
     <div class="body-content">
+
+        <!-- Bannière de haut de page -->
+
         <div class="banner-top">
-            <!-- Bannière de haut de page -->
             <img src="/includes/assets/background-top.jpg" alt="Bannière de haut de page">
         </div>
+        <div class="title-content"> 
+            <h2>Présentation</h2>
+            <hr>
+        </div>
         <div class="main_wrapper" aria-label="Texte du slider">
+
             <!-- Slider -->
+
             <section class="desc_text">
-                <h2 class="desc_title">A la pointe de la technologie verte <br>
-                    <span>Panneaux et ombrières solaires</span>
+                <h2 id="desc_title" class="desc_title">A la pointe de la technologie verte <br>
+                    Panneaux et ombrières solaires
                 </h2>
                 <div>
                     <h3 id="subtitle_1">Implantation</h3>
@@ -98,18 +110,24 @@
                             <img src="/includes/assets/imgs/panneaux-solaires-toit-maison-tuiles.jpeg" alt="">
                         </li>
                         <li id="custom" class="splide__slide">
-                            <img src="/includes/assets/imgs/rechercheDāveloppement.jpg" alt="">
+                            <img src="/includes/assets/imgs/fibre.png" alt="">
                         </li>
                     </ul>
                 </div>
             </section>
         </div>
-        <div id="map" aria-label="Carte interractive avec la position des implantations"></div>
+
         <!-- Affichage de la carte interactive avec les différents endroits d'implantation marqués avec des marqueurs-->
+
+        <div id="map" aria-label="Carte interractive avec la position des implantations"></div>
     </div>
 
-    <footer>
         <!-- Footer -->
+
+    <footer>
+
+        <!-- Liens footer -->
+
         <div id="upper-footer">
             <div id="footer-left">
                 <div class="footer-links">
@@ -147,6 +165,9 @@
                     </a>
                 </div>
             </div>
+
+<!-- Formulaire newsletter-->
+
             <div id="logo-and-form">
                 <form action="https://bit.ly/3TG3Iyl" method="POST">
                     <img src="/includes/assets/icons/mstile-70x70.png" alt="logo">
@@ -157,14 +178,18 @@
             </div>
         </div>
 
+<!-- Cpyright et mentions légales -->        
+
         <div class="bottom-footer">
             <p>© Sunpower | Tous droits réservés</p>
             <p>Sunpower, retrouve ton énergie !</p>
         </div>
     </footer>
+
+    <!-- Bouton pour aller en haut de page -->
+
     <div class="top_btn" id="top_btn" onmouseover="ch_op_b(this)" onmouseout="ch_op_a(this)" onClick="GoTop()"
         aria-label="Bouton vers le haut"><i class="fa-solid fa-arrow-up fa-2x"></i></div>
-    <!-- Bouton pour aller en haut de page -->
     <script async
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4Gw-yZQM1X7S6bq0CK3M51MTQGzV9KrI&callback=initMap"
         defer></script>
