@@ -94,13 +94,13 @@ sr.reveal('.splide', {
     reset: false
 })
 
-sr.reveal('#map', {
+/* sr.reveal('#map', {
     origin: 'top',
     scale: 0.7,
     distance: '50px',
     duration: 2500,
     reset: false
-})
+}) */
 
 sr.reveal('.mailing-from', {
     origin: 'top',

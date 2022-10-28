@@ -22,7 +22,7 @@ document.addEventListener( 'DOMContentLoaded', function() {
         //Conditionnel qui permet d'afficher le bon texte selon l'index du slide
         if (index === 0) {
           title.innerHTML = "A la pointe de la technologie verte <br> Panneaux et ombrières solaires";
-          subtitle1.innerHTML = "Implentation";
+          subtitle1.innerHTML = "Implantation";
           subtitle2.innerHTML = "Nos engagements";
           text1.innerHTML = "Implanté dans la région Occitanie et travaillant avec les métropoles montpelliéraines et toulousaines, Sunpower vous accompagne dans votre projet d’installation de panneaux et d’ombrières solaires.";
           text2.innerHTML = "Pleinement engagé dans la lutte contre le changement climatique et dans la transition énergétique, Sunpower voit dans chaque projet l’opportunité de mettre en place une action en faveur de l’environnement. Les ombrières solaires: un concept clé de l’énergie verte. Avec des panneaux à haut rendement, il est désormais possible de charger vos voitures électrique grâce à l’énergie solaire.";
