@@ -47,6 +47,22 @@ a {
         height: 1px;
     }
 
+
+/* Titre map */
+
+div.title-map {
+    text-align: center;
+    margin-top: 3em;
+    color: var(--main-yellow-color);
+}
+
+div.title-map hr {
+    width: 5%;
+    border: none;
+    background-color: var(--main-yellow-color);
+    height: 3px;
+}
+
 /* MAIN WRAPPER */
 .main_wrapper {
     margin: 15vh 3em 0 3em;
@@ -124,10 +140,6 @@ a {
     padding: 0;
     width: 100%;
 }
-
-
-
-
 
 .splide__slide img {
     height: 100%;

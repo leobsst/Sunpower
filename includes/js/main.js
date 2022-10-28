@@ -80,9 +80,32 @@ sr.reveal('.p5', {
 });
 
 
-sr.reveal('.desc_title', {
-    origin: 'left',
+sr.reveal('.desc_text', {
+    origin: 'bottom',
+    distance: '50px',
+    duration: 2500,
+    reset: false
+})
+
+sr.reveal('.splide', {
+    origin: 'top',
+    distance: '50px',
+    duration: 2500,
+    reset: false
+})
+
+sr.reveal('#map', {
+    origin: 'top',
+    scale: 0.7,
+    distance: '50px',
+    duration: 2500,
+    reset: false
+})
+
+sr.reveal('.mailing-from', {
+    origin: 'top',
     distance: '50px',
     duration: 2500,
     reset: true
 })
+

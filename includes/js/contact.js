@@ -6,8 +6,6 @@
 
 // })
 
-
-
 function load_pro() {
     $("#form-container").load('/includes/templates/pro-contact.html');
 }

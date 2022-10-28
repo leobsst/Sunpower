@@ -36,27 +36,32 @@
 
     <!-- Formulaire -->            
     <div class="mailing-form" id="mailing-form">       
-        <div class="infos">
-            <h2>service particulier</h2>
-            <hr>
-            <span><i class="fa-solid fa-phone"></i><p>08.32.21.43.12</p></span>
-            <span><i class="fa-solid fa-location-dot"></i><p>30 Rue du soleil<br>34000 Montpellier<br>FRANCE</p></span>
-            <span><i class="fa-solid fa-envelope"></i><p>sales@sunpower.com</p></span>
+        <div class="mailing_wrapper">
+            <div class="infos">
+                <h2>service particulier</h2>
+                <hr>
+                <div class="details">
+                    <span><i class="fa-solid fa-phone"></i><p>08.32.21.43.12</p></span>
+                    <span><i class="fa-solid fa-location-dot"></i><p>30 Rue du soleil<br>34000 Montpellier<br>FRANCE</p></span>
+                    <span><i class="fa-solid fa-envelope"></i><p>sales@sunpower.com</p></span>
+                </div>
+            </div>
+
+            <div class="form_wrapper">
+                <form action="/" method="post">
+                    <div class="sidebyside">
+                        <input type="text" name="lname" id="lname" required placeholder="Nom">
+                        <input type="text" name="fname" id="fname" required placeholder="Prénom">
+                    </div>
+                    <div class="sidebyside">
+                        <input type="email" name="email" id="email" required placeholder="Email">
+                        <input type="tel" name="tel" id="tel" required placeholder="Téléphone">
+                    </div>
+                    <textarea name="description" id="description" required placeholder="Description"></textarea><br>
+                </form>
+            </div>
         </div>
+        <input id="submit_btn" type="submit" value="Envoyer ➝">
         
-        <div class="form_wrapper">
-            <form action="/" method="post">
-                <div class="sidebyside">
-                    <input type="text" name="lname" id="lname" required placeholder="Nom">
-                    <input type="text" name="fname" id="fname" required placeholder="Prénom">
-                </div>
-                <div class="sidebyside">
-                    <input type="email" name="email" id="email" required placeholder="Email">
-                    <input type="tel" name="tel" id="tel" required placeholder="Téléphone">
-                </div>
-                <textarea name="description" id="description" cols="30" rows="10" required placeholder="Description"></textarea><br>
-                <input type="submit" value="Envoyer ➝">
-            </form>
-        </div>
     </div>
 </div>

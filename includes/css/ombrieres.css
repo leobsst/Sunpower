@@ -72,7 +72,7 @@ div.grid-content-1 {
         order: 1;
     }
     div.grid-content-1 div:nth-child(2) {
-        background-image: url("../assets/imgs/panneausolaire.png");
+        background-image: url("../assets/imgs/panneausolaire.jpg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;

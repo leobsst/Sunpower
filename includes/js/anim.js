@@ -3,10 +3,14 @@ let wordIndex = 0;
 let letterIndex = 0;
 
 if (window.location.pathname === "/") {
+    const home = document.getElementById("home");
+    home.classList.add("current");
     let array = ["Présentationㅤ"];
     Animletter(array);
 }
 if (window.location.pathname === "/ombrieres/" || window.location.pathname === "/ombrieres") {
+    const ombrieres = document.getElementById("ombrieres");
+    ombrieres.classList.add("current");
     let array = ["Les ombrières solairesㅤ"];
     Animletter(array);
 }
@@ -15,10 +19,14 @@ if (window.location.pathname === "/mentions-legales/" || window.location.pathnam
     Animletter(array);
 }
 if (window.location.pathname === "/groupe/" || window.location.pathname === "/groupe" || window.location.pathname === "/groupe/#about-us" || window.location.pathname === "/groupe/#partners"|| window.location.pathname === "/groupe#about-us" || window.location.pathname === "/groupe#partners") {
+    const group = document.getElementById("group");
+    group.classList.add("current");
     let array = ["Le groupeㅤ"];
     Animletter(array);
 }
 if (window.location.pathname === "/contact/" || window.location.pathname === "/contact") {
+    const contact = document.getElementById("contact");
+    contact.classList.add("current");
     let array = ["Nous contacterㅤ"];
     Animletter(array);
 }

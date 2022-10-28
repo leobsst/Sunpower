@@ -10,6 +10,8 @@ let text2 = document.getElementById("text_2")
 document.addEventListener( 'DOMContentLoaded', function() {
     const splide = new Splide( '.splide', {
       arrows: false,
+      autoplay: true,
+      loop: true,
     } );
     
     // Ecoute si il y a un changement de slide
