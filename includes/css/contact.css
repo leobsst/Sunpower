@@ -79,11 +79,12 @@ div.select-type div.cards div.card {
     border-radius: 15px;
     border: none;
     background-color: var(--main-green-color);
-    color: var(--main-yellow-color);
+    color: var(--main-font-color);
     cursor: pointer;
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    white-space: nowrap;
 }
 
 .inputfile:focus+label {
@@ -121,11 +122,6 @@ input[type="file"] {
     margin-block: 5vh;
 }
 
-.infos {
-    flex: 1;
-    padding: 2vw;
-}
-
 .form_wrapper {
     flex: 3;
     margin-left: 1vw;
@@ -133,8 +129,10 @@ input[type="file"] {
 
 .mailing_wrapper {
     display: flex;
-    margin-bottom: 3vh;
+    margin-bottom: 0.8vh;
 }
+
+ /* LIGNES DE FORMLAIRE */
 
 .sidebyside {
     display: flex;
@@ -143,10 +141,12 @@ input[type="file"] {
     flex: 1;
 }
 
+/* BOUTON ENVOYER */
 
 #submit_btn {
+    margin-top: 2vh;
     width: fit-content;
-    align-self: flex-end;
+    float: right;
     background-color: var(--main-green-color);
     color: var(--main-font-color);
     height: 60px;
@@ -167,6 +167,7 @@ input[type="file"] {
     transition: .3s ease-in-out;
 }
 
+/* CHAMPS DE FORMULAIRE */
 
 .sidebyside input[type="text"],
 .sidebyside input[type="email"],
@@ -185,7 +186,11 @@ textarea {
     border-radius: 5px;
 }
 
+/* COORDONNEES */
+
 .infos {
+    flex: 1;
+    padding: 2vw;
     border-radius: 10px;
     background-color: var(--main-green-color);
     display: flex;
@@ -227,6 +232,7 @@ textarea {
     width: fit-content;
 }
 
+/* STYLE FORMULAIRE */
 
 div.mailing-form div.infos span p {
     color: var(--main-font-color);
@@ -246,87 +252,4 @@ div.mailing-form div.infos span svg {
     resize: none;
     width: 98.3%;
     height: 15em;
-}
-
-@media (max-width: 1280px) {
-
-    .sidebyside input[type="text"],
-    .sidebyside input[type="email"],
-    .sidebyside input[type="tel"] {
-        width: 98.3%;
-    }
-
-}
-
-@media (max-width: 1060px) {
-    .mailing_wrapper {
-        display: block;
-    }
-
-    .form_wrapper {
-        margin-left: 0;
-    }
-
-    .mailing-form {
-        margin-inline: 14vmax;
-    }
-
-    .infos {
-        margin-bottom: 1.5vh;
-    }
-
-}
-
-@media (max-width: 900px) {
-    .mailing-form {
-        margin-inline: 12vmax
-    }
-}
-
-@media (max-width: 780px) {
-    .mailing-form {
-        margin-inline: 8vmax
-    }
-}
-
-@media (max-width: 600px) {
-    .mailing-form {
-        margin-inline: 6vmax
-    }
-}
-
-@media (max-width: 500px) {
-    .mailing-form {
-        margin-inline: 3vmax
-    }
-
-    div.select-type div.cards div.card {
-        flex-direction: unset;
-        width: 100%;
-        height: fit-content;
-        margin-block: 0.5em;
-        justify-content: space-evenly;
-    }
-
-    div.select-type div.cards {
-        flex-direction: column;
-        align-items: flex-start;
-        margin: 0;
-        width: 100%;
-    }
-
-    div.select-type div.cards a {
-        width: 90%;
-    }
-
-    div.select-type {
-        justify-content: flex-start;
-
-    }
-}
-
-@media (max-width: 400px) {
-    .mailing-form {
-        margin-inline: 1vmax
-    }
 }

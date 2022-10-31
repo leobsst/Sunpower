@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Poppins:wght@600&display=swap');
 
+
+/* Polices */
 h1,h2,h3 {
     font-family: 'Poppins', sans-serif;
 }
@@ -9,7 +11,6 @@ p, a {
 }
 
 /* BANNIERE TITRE */
-
 div.title-content {
     height: fit-content;
     padding: 20px 10px 20px 10px;
@@ -24,20 +25,17 @@ div.title-content {
     color: var(--main-yellow-color);
 }
 
-    div.title-content h2,
-    div.title-content h3,
-    div.title-content hr {
-        transform: rotate(3.51deg)!important;
-    }
-
-
-    div.title-content hr {
-        width: 5%;
-        background-color: var(--main-yellow-color);
-        border: none;
-        height: 1px;
-    }
-
+div.title-content h2,
+div.title-content h3,
+div.title-content hr {
+    transform: rotate(3.51deg)!important;
+}
+div.title-content hr {
+    width: 5%;
+    background-color: var(--main-yellow-color);
+    border: none;
+    height: 1px;
+}
 /* PRESENTATION DES OMBRIERES */
 /* PREMIERE LIGNE */
 

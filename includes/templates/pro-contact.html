@@ -7,7 +7,7 @@
                         <i class="fa-solid fa-briefcase fa-2x"></i>
                     </div>
                     <div class="name-type">
-                        <p>Entreprise & Collectivité</p>
+                        <p>Entreprise<br>Collectivité</p>
                     </div>
                 </div>
             </a>
@@ -69,13 +69,15 @@
                     </div>
                     <div class="sidebyside upload">
                         <input type="tel" name="tel" id="tel" required placeholder="Téléphone">
-                        <button type="button" id="upload" onclick="uploadFile()"><i
-                                class="fa-solid fa-upload"></i>Joindre un fichier</button>
+                        <input type="file" name="file" id="file" class="inputfile" onclick="upload()"
+                            accept="application/pdf" />
+                        <label for="file"><i class="fa-solid fa-upload"></i>Joindre un fichier</label>
                     </div>
                     <textarea name="description" id="description" required placeholder="Description"></textarea><br>
+                    <input id="submit_btn" type="submit" value="Envoyer ➝">
                 </form>
             </div>
         </div>
-        <input id="submit_btn" type="submit" value="Envoyer ➝">
+
     </div>
 </div>

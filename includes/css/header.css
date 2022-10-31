@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap');
 
-
+/* INITIALISATION DES VARIABLES DE STYLES POUR LES COULEURS */
 :root {
     --main-yellow-color: #FAC86F;
     --main-dark-color: #242530;
@@ -10,7 +10,7 @@
     --medium-gray: #2C2E44;
 }
 
-
+/* RESET LE STYLE DU HTML/BODY */
 html,
 body {
     margin: 0;
@@ -22,6 +22,7 @@ body {
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
+
 
 *:focus {
     outline: none;
@@ -37,7 +38,7 @@ a:focus {
     transition: .2s;
 }
 
-/* NAVBAR */
+/* STYLE DE LA NAVBAR */
 
 nav.navbar {
     background-color: var(--main-darker-color);
@@ -53,11 +54,13 @@ nav.navbar {
     transition: .2s ease-in-out;
 }
 
+/* STYLE DE LA NAVBAR QUAND ON SCROLL */
 nav.navbar.scrolled {
     height: 85px!important;
     transition: .2s ease-in-out;
 }
 
+/* STYLE DE L'ICON DE LA NAVBAR */
 .nav-head {
     display: flex;
     flex-direction: row;
@@ -73,6 +76,8 @@ nav.navbar.scrolled {
     z-index: 99;
 }
 
+
+/* STYLE DU TEXTE DE LA NAVBAR */
 #logo_text {
     height: 2.5em;
 }
@@ -81,6 +86,7 @@ nav.navbar.scrolled {
     height: 6em;
 }
 
+/* STYLE DES LIENS DE LA NAVBAR */
 .nav-links {
     padding: 0;
     list-style: none;
@@ -98,6 +104,8 @@ nav.navbar.scrolled {
     color: var(--main-font-color);
 }
 
+
+/* STYLE DES ANIMATIONS DES LIENS DE LA NAVBAR */
 .nav-link::after {
     content: "";
     display: block;
@@ -114,28 +122,29 @@ nav.navbar.scrolled {
     transform: scaleX(1);
 }
 
+/* STYLE DU LIEN DE LA PAGE ACTUELLE */
 a.nav-link.current {
     color: var(--main-yellow-color)!important;
 }
 
+/* STYLE DU BURGER MENU (CACHE TANT QUE LA PAGE EST FORMAT DESkTOP) */
 .burger {
     display: none;
 }
 
+/* CLASS OPEN OUR LE MENU (OUVRE LE MENU LORS DU CLICK VOIR JS) */
 .open {
     transform: translate(0);
 }
 
-/* BODY */
-
+/* STYLE DES ELEMENTS DU BODY */
 div.body-content {
     margin-top: 85px;
     z-index: 1;
     background-color: var(--main-dark-color);
 }
 
-/* BANNIERE */
-
+/* STYLE DE LA BANNIERE*/
 div.banner-top {
     width: 100%;
     z-index: 0;
@@ -143,14 +152,14 @@ div.banner-top {
     top: 20px;
 }
 
-    div.banner-top img {
-        width: 100%;
-        height: 350px;
-        object-fit: cover;
-    }
+/* STYLE DE L'IMAGE DE LA BANNIERE*/
+div.banner-top img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
 
 /* BOUTON HAUT DE PAGE */
-
 div.top_btn {
     color: var(--main-dark-color);
     background-color: var(--main-yellow-color);
@@ -171,6 +180,7 @@ div.top_btn {
     display: flex;
 }
 
+/* STYLE DE L'ANIMATION DU BOUTON HAUT DE PAGE */
 div.top_btn:hover {
     opacity: 0.9;
     transition: .3s;
@@ -178,24 +188,24 @@ div.top_btn:hover {
     box-shadow: 0px 0px 12px 2px rgba(0,0,0,0.5);
 }
 
-
+/* ANIMATION LORS DU SCROLL */
 /* width */
 ::-webkit-scrollbar {
-    width: 10px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background-color: var(--main-darker-color);
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background-color: #fac76fad;
-    border-radius: 15px;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background-color: var(--main-yellow-color);
-  }
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: var(--main-darker-color);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: #fac76fad;
+  border-radius: 15px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--main-yellow-color);
+}

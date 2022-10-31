@@ -7,7 +7,7 @@
                         <i class="fa-solid fa-briefcase fa-2x"></i>
                     </div>
                     <div class="name-type">
-                        <p>Entreprise & Collectivité</p>
+                        <p>Entreprise<br>Collectivité</p>
                     </div>
                 </div>
             </a>
@@ -56,29 +56,28 @@
             <div class="form_wrapper">
                 <form action="/" method="post">
                     <div class="sidebyside">
-                        <input type="text" name="societyname" id="societyname" required placeholder="Raison social">
-                        <input type="text" name="qualite" id="qualite" required placeholder="Qualité">
+                        <input class="check" type="text" name="societyname" id="societyname" required placeholder="Raison social">
+                        <input class="check" type="text" name="qualite" id="qualite" required placeholder="Qualité">
                     </div>
                     <div class="sidebyside">
-                        <input type="text" name="lname" id="lname" required placeholder="Nom">
-                        <input type="text" name="fname" id="fname" required placeholder="Prénom">
+                        <input class="check" type="text" name="lname" id="lname" required placeholder="Nom">
+                        <input class="check" type="text" name="fname" id="fname" required placeholder="Prénom">
                     </div>
                     <div class="sidebyside">
-                        <input type="email" name="email" id="email" required placeholder="Email">
-                        <input type="text" name="adresse" id="adresse" required placeholder="Adresse">
+                        <input class="check" type="email" name="email" id="email" required placeholder="Email">
+                        <input class="check" type="text" name="adresse" id="adresse" required placeholder="Adresse">
                     </div>
                     <div class="sidebyside upload">
-                        <input type="tel" name="tel" id="tel" required placeholder="Téléphone">
-                        <!-- <input type="file" id="upload" onclick="uploadFile()"><i class="fa-solid fa-upload"></i>Joindre
-                        un fichier -->
-                        <input type="file" name="file" id="file" class="inputfile" onclick="upload()" />
+                        <input class="check" type="tel" name="tel" id="tel" required placeholder="Téléphone">
+                        <input type="file" name="file" id="file" class="inputfile" onclick="upload()"
+                            accept="application/pdf" />
                         <label for="file"><i class="fa-solid fa-upload"></i>Joindre un fichier</label>
-
                     </div>
                     <textarea name="description" id="description" required placeholder="Description"></textarea><br>
+                    <input id="submit_btn" type="submit" value="Envoyer ➝">
                 </form>
             </div>
         </div>
-        <input id="submit_btn" type="submit" value="Envoyer ➝">
+
     </div>
 </div>

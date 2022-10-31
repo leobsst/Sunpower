@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Poppins:wght@600&display=swap');
 
+
+/* Polices */
 h1,
 h2,
 h3 {
@@ -19,6 +21,7 @@ a {
     margin-inline: 3em;
 }
 
+/* STYLE DE LA BANNIERE*/
 .title-content {
     height: fit-content;
     padding: 45px 10px 45px 10px;
@@ -33,22 +36,24 @@ a {
     color: var(--main-yellow-color);
 }
 
+
+/* STYLE DU TITRE*/
 .title-content h2,
-    .title-content h3,
-    .title-content hr {
-        transform: rotate(3.51deg)!important;
-    }
+.title-content h3,
+.title-content hr {
+    transform: rotate(3.51deg)!important;
+}
+
+/* STYLE DU SEPARATEUR*/
+.title-content hr {
+    width: 5%;
+    background-color: var(--main-yellow-color);
+    border: none;
+    height: 1px;
+}
 
 
-    .title-content hr {
-        width: 5%;
-        background-color: var(--main-yellow-color);
-        border: none;
-        height: 1px;
-    }
-
-
-/* Titre map */
+/* STYLE TITRE MAP */
 
 div.title-map {
     text-align: center;
@@ -56,6 +61,7 @@ div.title-map {
     color: var(--main-yellow-color);
 }
 
+/* STYLE SEPARATEUR MAP */
 div.title-map hr {
     width: 5%;
     border: none;
@@ -63,22 +69,25 @@ div.title-map hr {
     height: 3px;
 }
 
-/* MAIN WRAPPER */
+/* STYLE MAIN WRAPPER */
 .main_wrapper {
     margin: 15vh 3em 0 3em;
 }
 
+
+/* STYLE DU SLIDER ET DE LA DESCRIPTION DE L'IMAGE */
 .main_wrapper section {
     flex: 1;
 }
 
+/* STYLE LA DESCRIPTION DU SLIDER */
 .desc_text {
     background-color: var(--main-green-color);
     margin: 0;
     padding: 2vw;
-
 }
 
+/* STYLE DES TITRES DE LA DESCRIPTION*/
 .desc_text h2 {
     margin: 0;
     text-align: center;
@@ -89,6 +98,8 @@ div.title-map hr {
     text-shadow: #000000;
 }
 
+
+/* STYLE DES SOULIGNEMENTS DE SOUS-TITRES DE LA DESCRIPTION*/
 .desc_text h3::after {
     content: "";
     display: block;
@@ -98,6 +109,7 @@ div.title-map hr {
     background: var(--main-yellow-color);
 }
 
+/* STYLE DES SOUS-TITRES DE LA DESCRIPTION*/
 .desc_text div h3 {
     margin: 0;
     margin-block: 2vh;
@@ -105,6 +117,8 @@ div.title-map hr {
     font-size: 1.3vmax;
 }
 
+
+/* STYLE DES PARAGRAPHES DE LA DESCRIPTION*/
 .desc_text div p {
     margin: 0;
     color: var(--main-font-color);
@@ -112,13 +126,13 @@ div.title-map hr {
     font-size: 1.3vmax;
 }
 
-/* SLIDER */
-
+/* STYLE DES PAGINATIONS DU SLIDER(QUAND POSSEDE LA CLASE ACTIVE)*/
 .splide__pagination__page.is-active {
     background: var(--main-yellow-color);
     border: 2px solid var(--main-yellow-color);
 }
 
+/* STYLE DES PAGINATIONS DU SLIDER(QUAND NE POSSEDE PAS LA CLASE ACTIVE)*/
 .splide__pagination__page {
     margin: 5px;
     display: inline-block;
@@ -133,6 +147,7 @@ div.title-map hr {
     cursor: pointer;
 }
 
+/* STYLE DES PAGINATIONS DU SLIDER(LAYOUT)*/
 .splide__pagination {
     position: absolute;
     transform: translateY(-4em);
@@ -141,6 +156,10 @@ div.title-map hr {
     width: 100%;
 }
 
+
+
+
+/* STYLE DES IMAGES DU SLIDER(LAYOUT)*/
 .splide__slide img {
     height: 100%;
     width: 100%;

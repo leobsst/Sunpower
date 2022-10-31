@@ -1,3 +1,5 @@
+/* PASSAGE CARTES FONDATEURS EN VERSION MOBILE */
+
 @media (max-width: 862px) {
     div.founders-content div.cards div.card {
         flex-direction: column;

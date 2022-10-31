@@ -42,7 +42,7 @@ div.title-content {
     }
 
 
-/* STYLE DIV TEXTE*/
+/* STYLE */
 div.text-content {
     width: 80%;
     margin: 120px auto 0 auto;
@@ -51,7 +51,6 @@ div.text-content {
     color: var(--main-font-color);
 }
 
-/* STYLE LIENS */
 div.text-content a {
     color: var(--main-yellow-color);
     text-decoration: none;

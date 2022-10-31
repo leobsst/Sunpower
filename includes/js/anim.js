@@ -14,7 +14,7 @@ if (window.location.pathname === "/ombrieres/" || window.location.pathname === "
     let array = ["Les ombrières solairesㅤ"];
     Animletter(array);
 }
-if (window.location.pathname === "/mentions-legales/" || window.location.pathname === "/mentions-legales") {
+if (window.location.pathname === "/politic-confidentiality/" || window.location.pathname === "/politic-confidentiality") {
     let array = ["Politique de confidentialitéㅤ"];
     Animletter(array);
 }
