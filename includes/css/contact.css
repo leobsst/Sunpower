@@ -1,10 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Poppins:wght@600&display=swap');
 
-h1,h2,h3 {
+h1,
+h2,
+h3 {
     font-family: 'Poppins', sans-serif;
 }
 
-p, a {
+p,
+a {
     font-family: 'Inter', sans-serif;
 }
 
@@ -14,7 +17,7 @@ div.title-content {
     height: fit-content;
     padding: 45px 10px 45px 10px;
     margin-left: -10px;
-    margin-right: -10px;;
+    margin-right: -10px;
     width: 100%;
     margin-top: 19em;
     background: #181925;
@@ -24,19 +27,19 @@ div.title-content {
     color: var(--main-yellow-color);
 }
 
-    div.title-content h2,
-    div.title-content h3,
-    div.title-content hr {
-        transform: rotate(3.51deg)!important;
-    }
+div.title-content h2,
+div.title-content h3,
+div.title-content hr {
+    transform: rotate(3.51deg) !important;
+}
 
 
-    div.title-content hr {
-        width: 5%;
-        background-color: var(--main-yellow-color);
-        border: none;
-        height: 1px;
-    }
+div.title-content hr {
+    width: 5%;
+    background-color: var(--main-yellow-color);
+    border: none;
+    height: 1px;
+}
 
 /* SELECTION TYPE DE FORMULAIRE */
 
@@ -49,48 +52,73 @@ div.select-type {
     justify-content: center;
 }
 
-    div.select-type div.cards {
-        display: flex;
-        justify-content: center;
-        margin: 10px 10px 10px 10px;
-    }
+div.select-type div.cards {
+    display: flex;
+    justify-content: center;
+    margin: 10px 10px 10px 10px;
+}
 
-    div.select-type div.cards div.card {
-        background-color: var(--main-yellow-color);
-        padding: 10px;
-        border-radius: 10px;
-        width: 100px;
-        height: 100px;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: space-between;
-        margin: 0 10px 0 10px;
-        cursor: pointer;
-    }
+div.select-type div.cards div.card {
+    background-color: var(--main-yellow-color);
+    padding: 10px;
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 10px 0 10px;
+    cursor: pointer;
+}
 
-/* FORMULAIRE */    
+/* FORMULAIRE */
 
-/* .upload {
-    width: 210px;
-    margin: 5px 0 5px 0;
-    height: 38px;
+.inputfile+label {
+    width: 100%;
     border-radius: 15px;
     border: none;
     background-color: var(--main-green-color);
     color: var(--main-yellow-color);
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.inputfile:focus+label {
+    -webkit-box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.5);
+    transition: .3s ease-in-out;
+}
+
+.inputfile+label:hover {
+    -webkit-box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.5);
+    transition: .3s ease-in-out;
+}
+
+input[type="file"] {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
 .upload svg {
     margin-right: 10px;
-} */
+}
 
 .mailing-form {
     display: flex;
     flex-direction: column;
-    margin-inline: 20em;
+    margin-inline: 15vmax;
     background-color: var(--main-yellow-color);
     padding: 1vw;
     border-radius: 10px;
+    margin-block: 5vh;
 }
 
 .infos {
@@ -115,6 +143,7 @@ div.select-type {
     flex: 1;
 }
 
+
 #submit_btn {
     width: fit-content;
     align-self: flex-end;
@@ -126,15 +155,15 @@ div.select-type {
     font-size: 20px;
     border: none;
     cursor: pointer;
-    -webkit-box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.5); 
-    box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.5);
     transition: .3s ease-in-out;
 }
 
 #submit_btn:hover,
 #submit_btn:focus {
-    -webkit-box-shadow: 0px 0px 8px 2px rgba(255,255,255,.5); 
-    box-shadow: 0px 0px 8px 2px rgba(255,255,255,0.5);
+    -webkit-box-shadow: 0px 0px 8px 2px rgba(255, 255, 255, .5);
+    box-shadow: 0px 0px 8px 2px rgba(255, 255, 255, 0.5);
     transition: .3s ease-in-out;
 }
 
@@ -182,6 +211,10 @@ textarea {
     border-radius: 100%;
 }
 
+.infos.pro {
+    justify-content: space-evenly;
+}
+
 .details {
     width: fit-content;
     align-items: center;
@@ -216,30 +249,84 @@ div.mailing-form div.infos span svg {
 }
 
 @media (max-width: 1280px) {
-    .sidebyside {
-        display: block;
-        gap: 1vw;
-        margin-bottom: 0vh;
-    }
-
-    .mailing-form {
-        margin-inline: 14em;
-    }
 
     .sidebyside input[type="text"],
     .sidebyside input[type="email"],
     .sidebyside input[type="tel"] {
-    width: 98.3%;
+        width: 98.3%;
     }
+
 }
 
 @media (max-width: 1060px) {
     .mailing_wrapper {
         display: block;
-    
     }
+
     .form_wrapper {
         margin-left: 0;
     }
 
+    .mailing-form {
+        margin-inline: 14vmax;
+    }
+
+    .infos {
+        margin-bottom: 1.5vh;
+    }
+
+}
+
+@media (max-width: 900px) {
+    .mailing-form {
+        margin-inline: 12vmax
+    }
+}
+
+@media (max-width: 780px) {
+    .mailing-form {
+        margin-inline: 8vmax
+    }
+}
+
+@media (max-width: 600px) {
+    .mailing-form {
+        margin-inline: 6vmax
+    }
+}
+
+@media (max-width: 500px) {
+    .mailing-form {
+        margin-inline: 3vmax
+    }
+
+    div.select-type div.cards div.card {
+        flex-direction: unset;
+        width: 100%;
+        height: fit-content;
+        margin-block: 0.5em;
+        justify-content: space-evenly;
+    }
+
+    div.select-type div.cards {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0;
+        width: 100%;
+    }
+
+    div.select-type div.cards a {
+        width: 90%;
+    }
+
+    div.select-type {
+        justify-content: flex-start;
+
+    }
+}
+
+@media (max-width: 400px) {
+    .mailing-form {
+        margin-inline: 1vmax
+    }
 }
