@@ -27,9 +27,9 @@ function checkValidity() {
     const forms = document.querySelectorAll( '.check' );
     console.log(forms)
     let wrong = []
-    forms.forEach(element => {
-        console.log(element.checkValidity)
-    });
+    for (i = 0; i > forms.length-1; i++) {
+        console.log(i)
+    }
 }
 
 
