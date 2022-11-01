@@ -2,7 +2,7 @@ const targettext = document.querySelector('.title-content h2');
 let wordIndex = 0;
 let letterIndex = 0;
 
-if (window.location.pathname === "/") {
+if (window.location.pathname === "/" || window.location.pathname === "/index.html") {
     const home = document.getElementById("home");
     home.classList.add("current");
     let array = ["Présentationㅤ"];

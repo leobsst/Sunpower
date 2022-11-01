@@ -84,7 +84,6 @@ div.select-type div.cards div.card {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    white-space: nowrap;
 }
 
 .inputfile:focus+label {
@@ -141,6 +140,21 @@ input[type="file"] {
     flex: 1;
 }
 
+.sidebyside div {
+    flex: 1;
+    margin-inline: 5px;
+}
+
+.sidebyside div .label {
+    height: 75%;
+}
+
+.sidebyside .label_wrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
 /* BOUTON ENVOYER */
 
 #submit_btn {
@@ -169,6 +183,11 @@ input[type="file"] {
 
 /* CHAMPS DE FORMULAIRE */
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  display: none;
+}
+
 .sidebyside input[type="text"],
 .sidebyside input[type="email"],
 .sidebyside input[type="tel"] {
@@ -185,6 +204,15 @@ textarea {
     border: 3px solid var(--main-green-color);
     border-radius: 5px;
 }
+
+.sidebyside input.invalid {
+    border: 3px solid red;
+}
+
+.sidebyside input:focus.invalid {
+    outline: none;
+}
+  
 
 /* COORDONNEES */
 

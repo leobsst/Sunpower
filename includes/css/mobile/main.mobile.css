@@ -48,4 +48,8 @@
         transform: translateY(-1.4em);
     }
 
+    .main_wrapper {
+        margin: 15vw 1em 0 1em;
+    }
+
 }

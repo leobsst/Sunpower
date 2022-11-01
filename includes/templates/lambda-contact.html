@@ -1,3 +1,4 @@
+<script>validity()</script>
 <div id="form-container">
     <div class="select-type">
         <div class="cards">
@@ -54,14 +55,27 @@
             </div>
 
             <div class="form_wrapper">
-                <form action="/" method="post">
+                <form method="?" onsubmit="validity()">
                     <div class="sidebyside">
-                        <input type="text" name="lname" id="lname" required placeholder="Nom">
-                        <input type="text" name="fname" id="fname" required placeholder="Prénom">
+                        <div>
+                            <label for="lname">Nom</label>
+                            <input class="check" type="text" name="lname" id="lname" required placeholder="ex: Doe">
+                        </div>
+                        <div>
+                            <label for="fname">Prénom</label>
+                            <input class="check" type="text" name="fname" id="fname" required placeholder="ex: John">
+                        </div>
                     </div>
                     <div class="sidebyside">
-                        <input type="email" name="email" id="email" required placeholder="Email">
-                        <input type="tel" name="tel" id="tel" required placeholder="Téléphone">
+                        <div>
+                            <label for="email">Email</label>
+                            <input class="check" type="email" name="email" id="email"
+                            required placeholder="ex: johnd@mail.com">
+                        </div>
+                        <div>
+                            <label for="tel">Téléphone</label>
+                            <input class="check" type="tel" maxlenght="10" minlength="10" name="tel" id="tel" required placeholder="ex: 0823 00 00 00">
+                        </div>
                     </div>
                     <textarea name="description" id="description" required placeholder="Description"></textarea><br>
                     <input id="submit_btn" type="submit" value="Envoyer ➝">
@@ -70,3 +84,8 @@
         </div>
     </div>
 </div>
+<script>
+    $('#tel').on('keypress', function(e){
+    return e.metaKey || e.which <= 0 || e.which == 8 || /[0-9]/.test(String.fromCharCode(e.which));
+    });
+</script>

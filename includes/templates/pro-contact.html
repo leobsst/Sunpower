@@ -1,3 +1,5 @@
+<!-- Balise inline script obligé car on charge un code html par le biais de jquery (les elements du dom ne se charge pas pour la fonction pour valider les champs)-->
+<script>validity()</script>
 <div id="form-container">
     <div class="select-type">
         <div class="cards">
@@ -38,7 +40,7 @@
     <div class="mailing-form" id="mailing-form">
         <div class="mailing_wrapper">
             <div class="infos pro">
-                <h2>service professionnel</h2>
+                <h2>Service pro</h2>
                 <hr>
                 <div class="details">
                     <span><i class="fa-solid fa-phone"></i>
@@ -54,30 +56,61 @@
             </div>
 
             <div class="form_wrapper">
-                <form action="/" method="post">
+                <form method="?">
                     <div class="sidebyside">
-                        <input type="text" name="societyname" id="societyname" required placeholder="Raison social">
-                        <input type="text" name="qualite" id="qualite" required placeholder="Qualité">
+                        <div>
+                            <label for="societyname">Raison social</label>
+                            <input class="check" type="text" name="societyname" id="societyname" placeholder="ex: Sunpower">
+                        </div>
+                        <div>
+                            <label for="qualite">Qualité</label>
+                            <input class="check" type="text" name="qualite" id="qualite" required placeholder="ex: Dirigeant">
+                        </div>
                     </div>
                     <div class="sidebyside">
-                        <input type="text" name="lname" id="lname" required placeholder="Nom">
-                        <input type="text" name="fname" id="fname" required placeholder="Prénom">
+                        <div>
+                            <label for="lname">Nom</label>
+                            <input class="check" type="text" name="lname" id="lname" required placeholder="ex: Doe">
+                        </div>
+                        <div>
+                            <label for="fname">Prénom</label>
+                            <input class="check" type="text" name="fname" id="fname" required placeholder="ex: John">
+                        </div>
+
                     </div>
                     <div class="sidebyside">
-                        <input type="email" name="email" id="email" required placeholder="Email">
-                        <input type="text" name="adresse" id="adresse" required placeholder="Adresse">
+                        <div>
+                            <label for="email">Email</label>
+                            <input class="check" type="email" name="email" id="email"
+                            required placeholder="ex: johnd@mail.com">
+                        </div>
+                        <div>
+                            <label for="adresse">Adresse</label> 
+                            <input class="check" type="text" name="adresse" id="adresse"
+                            required placeholder="ex: 45 rue du soleil 34000">
+                        </div>
                     </div>
                     <div class="sidebyside upload">
-                        <input type="tel" name="tel" id="tel" required placeholder="Téléphone">
-                        <input type="file" name="file" id="file" class="inputfile" onclick="upload()"
-                            accept="application/pdf" />
-                        <label for="file"><i class="fa-solid fa-upload"></i>Joindre un fichier</label>
+                        <div>
+                            <label for="tel">Téléphone</label>
+                            <input class="check" type="tel" maxlenght="10" minlength="10" name="tel" id="tel" required placeholder="ex: 0823 00 00 00">
+                        </div>
+                        
+                        <div class="label_wrapper">
+                            <input type="file" name="file" id="file" class="inputfile" onclick="upload()" accept="application/pdf" />
+                            <label for="file" class="label"><i class="fa-solid fa-upload"></i>Joindre un fichier</label>
+                        </div>
                     </div>
                     <textarea name="description" id="description" required placeholder="Description"></textarea><br>
                     <input id="submit_btn" type="submit" value="Envoyer ➝">
                 </form>
             </div>
         </div>
-
     </div>
 </div>
+<!-- Restriction aux chiffres de l'input téléphone (peut pas être ajouté dans un fichier JS car html chargé par une fonction)-->
+<script>
+    $('#tel').on('keypress', function(e){
+    return e.metaKey || e.which <= 0 || e.which == 8 || /[0-9]/.test(String.fromCharCode(e.which));
+    });
+</script>
