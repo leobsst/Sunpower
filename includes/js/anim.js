@@ -14,17 +14,17 @@ if (window.location.pathname === "/Sunpower/ombrieres/" || window.location.pathn
     let array = ["Les ombrières solairesㅤ"];
     Animletter(array);
 }
-if (window.location.pathname === "/Sunpower/politic-confidentiality/" || window.location.pathname === "/Sunpower/politic-confidentiality") {
+if (window.location.pathname === "/politic-confidentiality/" || window.location.pathname === "/politic-confidentiality" || window.location.pathname === "/Sunpower/politic-confidentiality" || window.location.pathname === "/Sunpower/politic-confidentiality/") {
     let array = ["Politique de confidentialitéㅤ"];
     Animletter(array);
 }
-if (window.location.pathname === "/Sunpower/groupe/" || window.location.pathname === "/Sunpower/groupe" || window.location.pathname === "/Sunpower/groupe/#about-us" || window.location.pathname === "/Sunpower/groupe/#partners"|| window.location.pathname === "/Sunpower/groupe#about-us" || window.location.pathname === "/Sunpower/groupe#partners") {
+if (window.location.pathname === "/groupe/" || window.location.pathname === "/groupe" || window.location.pathname === "/groupe/#about-us" || window.location.pathname === "/groupe/#partners"|| window.location.pathname === "/groupe#about-us" || window.location.pathname === "/groupe#partners" || window.location.pathname === "/Sunpower/groupe/" || window.location.pathname === "/Sunpower/groupe" || window.location.pathname === "/Sunpower/groupe/#about-us" || window.location.pathname === "/Sunpower/groupe/#partners"|| window.location.pathname === "/Sunpower/groupe#about-us" || window.location.pathname === "/Sunpower/groupe#partners") {
     const group = document.getElementById("group");
     group.classList.add("current");
     let array = ["Le groupeㅤ"];
     Animletter(array);
 }
-if (window.location.pathname === "/Sunpower/contact/" || window.location.pathname === "/Sunpower/contact") {
+if (window.location.pathname === "/contact/" || window.location.pathname === "/contact" || "/Sunpower/contact/" || window.location.pathname === "/Sunpower/contact") {
     const contact = document.getElementById("contact");
     contact.classList.add("current");
     let array = ["Nous contacterㅤ"];
