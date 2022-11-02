@@ -2,29 +2,29 @@ const targettext = document.querySelector('.title-content h2');
 let wordIndex = 0;
 let letterIndex = 0;
 
-if (window.location.pathname === "/" || window.location.pathname === "/index.html") {
+if (window.location.pathname === "/" || window.location.pathname === "/index.html" || window.location.pathname === "/Sunpower/index.html" || window.location.pathname === "/Sunpower/") {
     const home = document.getElementById("home");
     home.classList.add("current");
     let array = ["Présentationㅤ"];
     Animletter(array);
 }
-if (window.location.pathname === "/ombrieres/" || window.location.pathname === "/ombrieres") {
+if (window.location.pathname === "/Sunpower/ombrieres/" || window.location.pathname === "/Sunpower/ombrieres") {
     const ombrieres = document.getElementById("ombrieres");
     ombrieres.classList.add("current");
     let array = ["Les ombrières solairesㅤ"];
     Animletter(array);
 }
-if (window.location.pathname === "/politic-confidentiality/" || window.location.pathname === "/politic-confidentiality") {
+if (window.location.pathname === "/Sunpower/politic-confidentiality/" || window.location.pathname === "/Sunpower/politic-confidentiality") {
     let array = ["Politique de confidentialitéㅤ"];
     Animletter(array);
 }
-if (window.location.pathname === "/groupe/" || window.location.pathname === "/groupe" || window.location.pathname === "/groupe/#about-us" || window.location.pathname === "/groupe/#partners"|| window.location.pathname === "/groupe#about-us" || window.location.pathname === "/groupe#partners") {
+if (window.location.pathname === "/Sunpower/groupe/" || window.location.pathname === "/Sunpower/groupe" || window.location.pathname === "/Sunpower/groupe/#about-us" || window.location.pathname === "/Sunpower/groupe/#partners"|| window.location.pathname === "/Sunpower/groupe#about-us" || window.location.pathname === "/Sunpower/groupe#partners") {
     const group = document.getElementById("group");
     group.classList.add("current");
     let array = ["Le groupeㅤ"];
     Animletter(array);
 }
-if (window.location.pathname === "/contact/" || window.location.pathname === "/contact") {
+if (window.location.pathname === "/Sunpower/contact/" || window.location.pathname === "/Sunpower/contact") {
     const contact = document.getElementById("contact");
     contact.classList.add("current");
     let array = ["Nous contacterㅤ"];
