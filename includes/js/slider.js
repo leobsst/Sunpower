@@ -28,7 +28,7 @@ document.addEventListener( 'DOMContentLoaded', function() {
           text1.innerHTML = "Implanté dans la région Occitanie et travaillant avec les métropoles montpelliéraines et toulousaines, Sunpower vous accompagne dans votre projet d’installation de panneaux et d’ombrières solaires.";
           text2.innerHTML = "Pleinement engagé dans la lutte contre le changement climatique et dans la transition énergétique, Sunpower voit dans chaque projet l’opportunité de mettre en place une action en faveur de l’environnement. Les ombrières solaires: un concept clé de l’énergie verte. Avec des panneaux à haut rendement, il est désormais possible de charger vos voitures électriques grâce à l’énergie solaire.";
         } else if (index === 1) {
-          title.innerHTML = "Aussi bien dans les collectivités que chez les particuliers !!";
+          title.innerHTML = "Aussi bien dans les collectivités que chez les particuliers";
           subtitle1.innerHTML = "Rejoignez-nous!";
           subtitle2.innerHTML = "Notre projet";
           text1.innerHTML = "Nous intervenons aussi bien auprès des collectivités que des particuliers. Un projet ? Contactez-nous via nos formulaires de demandes adaptés selon votre situation.";

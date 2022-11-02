@@ -24,7 +24,7 @@ if (window.location.pathname === "/groupe/" || window.location.pathname === "/gr
     let array = ["Le groupeㅤ"];
     Animletter(array);
 }
-if (window.location.pathname === "/contact/" || window.location.pathname === "/contact" || window.location.pathname === "/Sunpower/contact/" || window.location.pathname === "/Sunpower/contact") {
+if (window.location.pathname === "/contact/" || window.location.pathname === "/contact") {
     const contact = document.getElementById("contact");
     contact.classList.add("current");
     let array = ["Nous contacterㅤ"];
