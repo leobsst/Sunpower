@@ -31,6 +31,8 @@ if (window.location.pathname === "/contact/" || window.location.pathname === "/c
     Animletter(array);
 }
 
+console.log(window.location.pathname);
+
 function Animletter(array) {
     const createLetter = () => {
         const letter = document.createElement('span');
