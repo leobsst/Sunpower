@@ -39,7 +39,7 @@ function initMap() {
   for (let i = 0; i < markers.length; i++) {
     const marker = new google.maps.Marker({
       position: markers[i].position,
-      icon: "/includes/assets/icons/favicon.ico",
+      icon: "../assets/icons/favicon.ico",
       map: map,
     });
   }
