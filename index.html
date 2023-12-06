@@ -49,26 +49,27 @@
 <body>
 
     <!--  Navbar -->
-
-    <nav id="navbar" class="navbar" aria-label="navbar">
-        <div class="nav-head">
-            <div>
-                <a href="/"><img src="includes/assets/icons/mstile-70x70.png" alt="logo sunpower" id="logo_icon"></a>
-                <a href="/"><img src="includes/assets/icons/logo.svg" alt="logo sunpower" id="logo_text"></a>
+    <header>
+        <nav id="navbar" class="navbar" aria-label="navbar">
+            <div class="nav-head">
+                <div>
+                    <a href="/"><img src="includes/assets/icons/mstile-70x70.png" alt="logo sunpower" id="logo_icon"></a>
+                    <a href="/"><img src="includes/assets/icons/logo.svg" alt="logo sunpower" id="logo_text"></a>
+                </div>
+                <button class="burger" type="button" aria-label="activation de la navigation" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
-            <button class="burger" type="button" aria-label="activation de la navigation" aria-expanded="false">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-        <ul class="nav-links">
-            <li><a class="nav-link" id="home" href="index">Accueil</a></li>
-            <li><a class="nav-link" id="ombrieres" href="ombrieres">Ombrières</a></li>
-            <li><a class="nav-link" id="group" href="groupe">Groupe</a></li>
-            <li><a class="nav-link" id="contact" href="contact">Contact</a></li>
-        </ul>
-    </nav>
+            <ul class="nav-links">
+                <li><a class="nav-link" id="home" href="index">Accueil</a></li>
+                <li><a class="nav-link" id="ombrieres" href="ombrieres">Ombrières</a></li>
+                <li><a class="nav-link" id="group" href="groupe">Groupe</a></li>
+                <li><a class="nav-link" id="contact" href="contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <main>
         <div class="body-content">
@@ -140,18 +141,7 @@
         </div>
     </main>
 
-    <!-- Bouton pour aller en haut de page -->
-
-    <div class="top_btn" id="top_btn" onmouseover="ch_op_b(this)" onmouseout="ch_op_a(this)" onClick="GoTop()"
-        aria-label="Bouton vers le haut"><i class="fa-solid fa-arrow-up fa-2x"></i></div>
-    <script async
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4Gw-yZQM1X7S6bq0CK3M51MTQGzV9KrI&callback=initMap"
-        defer></script>
-    <script src="includes/js/scrollreveal.js"></script>
-</body>
-
-<!-- Footer -->
-
+    <!-- Footer -->
     <footer>
 
         <!-- Liens footer -->
@@ -212,6 +202,16 @@
             <p>© Sunpower | Tous droits réservés</p>
             <p>Sunpower, retrouve ton énergie !</p>
         </div>
-    </footer>   
+    </footer>
+
+    <!-- Bouton pour aller en haut de page -->
+
+    <div class="top_btn" id="top_btn" onmouseover="ch_op_b(this)" onmouseout="ch_op_a(this)" onClick="GoTop()"
+        aria-label="Bouton vers le haut"><i class="fa-solid fa-arrow-up fa-2x"></i></div>
+    <script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4Gw-yZQM1X7S6bq0CK3M51MTQGzV9KrI&callback=initMap"
+        defer></script>
+    <script src="includes/js/scrollreveal.js"></script>
+</body> 
 
 </html>
