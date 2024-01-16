@@ -8,7 +8,7 @@ if (window.location.pathname === "/" || window.location.pathname === "/index.htm
     let array = ["Présentationㅤ"];
     Animletter(array);
 }
-if (window.location.pathname === "/Sunpower/ombrieres/" || window.location.pathname === "/Sunpower/ombrieres") {
+if (window.location.pathname === "/ombrieres/" || window.location.pathname === "/Sunpower/ombrieres/") {
     const ombrieres = document.getElementById("ombrieres");
     ombrieres.classList.add("current");
     let array = ["Les ombrières solairesㅤ"];
